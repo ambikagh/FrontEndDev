@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	background: #faebf5;
+	line-height: 1.4;
+	font-family: 'Patua One', cursive;
+}
+
+div ul {
+	line-height: 1.6;
+}
+
+/* header styles */
+header {
+	position: relative;
+	background: #f5d6eb;
+	color: #3d0f2e;
+}
+
+header h1,
+header h2 {
+	text-align: center;
+	margin: 0;
+}
+
+header p {
+	padding-bottom: 10px;
+}
+
+.profile-img {
+	border-radius: 50%;
+	display: block;
+	margin: 20px;
+}
+
+.profile-desc {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Footer styles */
+
+footer {
+	background: #290a1f;
+	text-align: center;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+footer p {
+	color: #f5d6eb;
+	font-family: 'Patua One', cursive;
+}
+
+.github-icon {
+	padding-left: 10px;
+}
+
+.edu,.work,.skill {
+	background: #66194d;
+	margin: 10px 0;
+	padding: 10px 0;
+	color: #f5d6eb;
+}
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
+	.education,
+	.work-exp,
+	.skills{
+		text-align: center;
+	}
+
+@media (min-width: 769px){
+	
+		.content-wrap {
+		width: 80%;
+		margin: 0 auto;
+	}	
+	
+	.profile-img {
+		float: left;
+		width: 32%;
+		min-heaight: 150px;
+	}
+	
+	.profile-desc {
+		padding: 0;
+		float: left;
+		width: 65%;
+	}
+	
+	
+}
