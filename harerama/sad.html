@@ -1,0 +1,1758 @@
+	<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class=" html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_large html_header_sticky_disabled html_header_shrinking_disabled html_mobile_menu_tablet html_disabled html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_entry_id_24987 ">
+<head>
+<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+<!-- page title, displayed in your browser bar -->
+<title>Sadhguru Jaggi Vasudev - The Founder of Isha Foundation</title>
+<link rel="icon" href="http://isha.sadhguru.org/wp-content/uploads/2015/06/Isha-Favicon.png" type="image/png">
+
+
+
+
+
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<title>Sadhguru Jaggi Vasudev - The Founder of Isha Foundation</title>
+<script>
+  	jvcf7_loading_url= "http://isha.sadhguru.org/wp-content/plugins/contact-form-7/images/ajax-loader.gif";
+    jvcf7_invalid_field_design = "theme_1";
+	jvcf7_show_label_error = "errorMsgshow";
+  </script>
+<!-- This site is optimized with the Yoast SEO plugin v4.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The official website of Sadhguru - yogi, mystic and visionary, and founder of Isha Foundation. Find out more about the Man, Mystic and Mission."/>
+<meta name="robots" content="noodp"/>
+<meta name="keywords" content="sadhguru jaggi vasudev, sadhguru, mystic quotes, yoga guru, spirituality, spiritual thoughts, humanitarian"/>
+<link rel="canonical" href="http://isha.sadhguru.org/" />
+<link rel="publisher" href="https://plus.google.com/114291444811346653703/"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sadhguru Jaggi Vasudev - The Founder of Isha Foundation" />
+<meta property="og:description" content="The official website of Sadhguru - yogi, mystic and visionary, and founder of Isha Foundation. Find out more about the Man, Mystic and Mission." />
+<meta property="og:url" content="http://isha.sadhguru.org/" />
+<meta property="og:site_name" content="Isha.sadhguru.org" />
+<meta property="fb:app_id" content="200012393718770" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="The official website of Sadhguru - yogi, mystic and visionary, and founder of Isha Foundation. Find out more about the Man, Mystic and Mission." />
+<meta name="twitter:title" content="Sadhguru Jaggi Vasudev - The Founder of Isha Foundation" />
+<meta name="twitter:site" content="@sadhgurujv" />
+<meta name="twitter:creator" content="@sadhgurujv" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/isha.sadhguru.org\/","name":"Isha.sadhguru.org","potentialAction":{"@type":"SearchAction","target":"http:\/\/isha.sadhguru.org\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Isha.sadhguru.org &raquo; Feed" href="http://isha.sadhguru.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Isha.sadhguru.org &raquo; Comments Feed" href="http://isha.sadhguru.org/comments/feed/" />
+
+<!-- google webfont font replacement -->
+<link rel='stylesheet' id='avia-google-webfont' href='//fonts.googleapis.com/css?family=Open+Sans:400,600' type='text/css' media='all'/> 
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/isha.sadhguru.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://isha.sadhguru.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='events-manager-css'  href='http://isha.sadhguru.org/wp-content/plugins/events-manager/includes/css/events_manager.css?ver=5.6624' type='text/css' media='all' />
+<link rel='stylesheet' id='geotarget-css'  href='http://isha.sadhguru.org/wp-content/plugins/geotargeting/public/css/geotarget-public.css?ver=1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='collapseomatic-css-css'  href='http://isha.sadhguru.org/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='jvcf7_style-css'  href='http://isha.sadhguru.org/wp-content/plugins/jquery-validation-for-contact-form-7/css/jvcf7_validate.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='mashsb-styles-css'  href='http://isha.sadhguru.org/wp-content/plugins/mashsharer/assets/css/mashsb.min.css?ver=3.4.1' type='text/css' media='all' />
+<style id='mashsb-styles-inline-css' type='text/css'>
+.mashsb-count {color:#656666;}[class^="mashicon-"] .text, [class*=" mashicon-"] .text{
+    text-indent: -9999px !important;
+    line-height: 0px;
+    display: block;
+    } 
+    [class^="mashicon-"] .text:after, [class*=" mashicon-"] .text:after {
+        content: "" !important;
+        text-indent: 0;
+        font-size:13px;
+        display: block !important;
+    }
+    [class^="mashicon-"], [class*=" mashicon-"] {
+        width:25%;
+        text-align: center !important;
+    }
+    [class^="mashicon-"] .icon:before, [class*=" mashicon-"] .icon:before {
+        float:none;
+        margin-right: 0;
+    }
+    .mashsb-buttons a{
+       margin-right: 3px;
+       margin-bottom:3px;
+       min-width: 0;
+       width: 41px;
+    }
+    .onoffswitch, 
+    .onoffswitch-inner:before, 
+    .onoffswitch-inner:after 
+    .onoffswitch2,
+    .onoffswitch2-inner:before, 
+    .onoffswitch2-inner:after  {
+        margin-right: 0px;
+        width: 41px;
+        line-height: 41px;
+    }.mashsb-buttons a{padding: 7px; margin-right: 10px;}
+.mashsb-sharetext{ font-size: 14px; font-weight: bold; color: #c46f17; font-family:  Open Sans Light, Ariel, sans-serif !important;}
+.mashsb-buttons a{width: 41px; padding-right: 28px; }
+.mashsb-count{font-family:  Open Sans, Ariel, sans-serif; font-size: 28px; margin-top: 0px;}
+.mashsb-container { margin-left: 40%; display: inline-block; }
+.mashsb-box { width: 800px; }
+@media only screen and (max-width: 767px) {
+.mashsb-container { margin-left: 5%; }
+.mashsb-count{ font-size: 18px; }
+}
+@media only screen and (max-width: 500px) {
+.mashsb-count{ font-size: 18px; }
+.mashsb-sharetext { font-size: 10px; }
+.mashsb-buttons a { width: 10px; padding-right: 24px; }
+.mashicon-google, .mashicon-mail { display: none; }
+.mashsb-box .mashsb-buttons a.mash-small { padding-left: 20px; padding-right: 40px;}
+.mashsb-box {margin-left: -25px;}
+}
+/*.mashsb-count { display: none; }*/
+@media only screen and (max-width: 375px) {
+.mashsb-container { margin: 0 0 0 14% !important;}
+}
+@media only screen and (max-width: 320px) {
+.mashsb-container { margin: 0 0 0 9% !important;}
+}
+</style>
+<link rel='stylesheet' id='mashnet-styles-css'  href='http://isha.sadhguru.org/wp-content/plugins/mashshare-networks/assets/css/mashnet.min.css?ver=2.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='isha-fontello-icons-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold-child/fontello/css/isha-icons.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-grid-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/css/grid.css?ver=2' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-base-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/css/base.css?ver=2' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-layout-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/css/layout.css?ver=2' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-scs-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/css/shortcodes.css?ver=2' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-popup-css-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/js/aviapopup/magnific-popup.css?ver=1' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-media-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/js/mediaelement/skin-1/mediaelementplayer.css?ver=1' type='text/css' media='screen' />
+<link rel='stylesheet' id='avia-print-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/css/print.css?ver=1' type='text/css' media='print' />
+<link rel='stylesheet' id='avia-dynamic-css'  href='http://isha.sadhguru.org/wp-content/uploads/dynamic_avia/enfold_child.css?ver=58d9ff80e0917' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-custom-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold/css/custom.css?ver=2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='avia-style-css'  href='http://isha.sadhguru.org/wp-content/themes/enfold-child/style.css?ver=2.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/wp-a11y.min.js?ver=4.7.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var EM = {"ajaxurl":"http:\/\/isha.sadhguru.org\/wp-admin\/admin-ajax.php","locationajaxurl":"http:\/\/isha.sadhguru.org\/wp-admin\/admin-ajax.php?action=locations_search","firstDay":"1","locale":"en","dateFormat":"dd\/mmm","ui_css":"http:\/\/isha.sadhguru.org\/wp-content\/plugins\/events-manager\/includes\/css\/jquery-ui.min.css","show24hours":"0","is_ssl":"","bookingInProgress":"Please wait while the booking is being submitted.","tickets_save":"Save Ticket","bookingajaxurl":"http:\/\/isha.sadhguru.org\/wp-admin\/admin-ajax.php","bookings_export_save":"Export Bookings","bookings_settings_save":"Save Settings","booking_delete":"Are you sure you want to delete?","bb_full":"Sold Out","bb_book":"Book Now","bb_booking":"Booking...","bb_booked":"Booking Submitted","bb_error":"Booking Error. Try again?","bb_cancel":"Cancel","bb_canceling":"Canceling...","bb_cancelled":"Cancelled","bb_cancel_error":"Cancellation Error. Try again?","txt_search":"Search","txt_searching":"Searching...","txt_loading":"Loading...","event_reschedule_warning":"Are you sure you want to reschedule this recurring event? If you do this, you will lose all booking information and the old recurring events will be deleted.","event_detach_warning":"Are you sure you want to detach this event? By doing so, this event will be independent of the recurring set of events.","delete_recurrence_warning":"Are you sure you want to delete all recurrences of this event? All events will be moved to trash.","disable_bookings_warning":"Are you sure you want to disable bookings? If you do this and save, you will lose all previous bookings. If you wish to prevent further bookings, reduce the number of spaces available to the amount of bookings you currently have","booking_warning_cancel":"Are you sure you want to cancel your booking?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/events-manager/includes/js/events-manager.js?ver=5.6624'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/geotargeting/public/js/geotarget-public.js?ver=1.3'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/geotargeting/public/js/ddslick.js?ver=1.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mashsb = {"shares":"83497","round_shares":"1","animate_shares":"0","dynamic_buttons":"0","share_url":"http:\/\/isha.sadhguru.org\/","title":"Sadhguru+Jaggi+Vasudev+%E2%80%93+The+Founder+of+Isha+Foundation","image":null,"desc":"","hashtag":"ishafoundation","subscribe":"content","subscribe_url":"","activestatus":"1","singular":"1","twitter_popup":"1","refresh":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/mashsharer/assets/js/mashsb.min.js?ver=3.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var FlowFlowOpts = {"streams":{"id1":{"id":"1","name":"Social Stream","feeds":"[{\"timeline-type\":\"page_timeline\",\"content\":\"sadhguru\",\"hide-attachment\":\"nope\",\"id\":\"bp79260\",\"type\":\"facebook\",\"filter-by-words\":\"\"},{\"timeline-type\":\"user_timeline\",\"content\":\"sadhguru\",\"id\":\"yi77135\",\"type\":\"youtube\",\"filter-by-words\":\"\"},{\"timeline-type\":\"user_timeline\",\"content\":\"sadhgurujv\",\"list-name\":\"\",\"retweets\":\"nope\",\"replies\":\"nope\",\"id\":\"ej01703\",\"type\":\"twitter\",\"filter-by-words\":\"\"},{\"timeline-type\":\"channel\",\"content\":\"ishafoundation\",\"id\":\"ld43579\",\"type\":\"youtube\",\"filter-by-words\":\"\"}]","order":"smartCompare","posts":"40","days":"","page-posts":"20","cache":"yep","cache-lifetime":"30","gallery":"yep","private":"nope","hide-on-desktop":"nope","hide-on-mobile":"nope","heading":"Social Stream","headingcolor":"rgb(172, 83, 12)","subheading":"","subheadingcolor":"rgb(114, 112, 114)","hhalign":"center","bgcolor":"rgba(229, 229, 229, 0)","filter":"yep","filtercolor":"rgb(205, 205, 205)","mobileslider":"nope","viewportin":"yep","layout":"grid","width":"260","margin":"20","theme":"flat","gc-style":"style-1","cardcolor":"rgb(255, 255, 255)","namecolor":"rgb(154, 78, 141)","textcolor":"rgb(85, 85, 85)","linkscolor":"rgb(94, 159, 202)","restcolor":"rgb(132, 118, 129)","shadow":"rgba(0, 0, 0, 0.22)","bcolor":"rgba(240, 237, 231, 0.4)","talign":"left","gf-style":"style-3","fcardcolor":"rgb(64, 68, 71)","fscardcolor":"rgb(44, 45, 46)","ftextcolor":"rgb(255, 255, 255)","fnamecolor":"rgb(172, 83, 12)","frestcolor":"rgb(175, 195, 208)","fbcolor":"rgba(255, 255, 255, 0.4)","mborder":"nope","ftalign":"center","compact-style":"c-style-1","cnamecolor":"rgb(154, 78, 141)","ctextcolor":"rgb(85, 85, 85)","clinkscolor":"rgb(94, 159, 202)","crestcolor":"rgb(132, 118, 129)","cbcolor":"rgb(226, 226, 226)","cmeta":"upic","calign":"left","cards-num":"3","scrolltop":"yep","css":""},"id2":{"id":"2","name":"twitter","feeds":"[{\"timeline-type\":\"home_timeline\",\"content\":\"SadhguruJV\",\"list-name\":\"\",\"retweets\":\"nope\",\"replies\":\"nope\",\"id\":\"az96773\",\"type\":\"twitter\",\"filter-by-words\":\"\"}]","order":"smartCompare","posts":"40","days":"","page-posts":"20","cache":"yep","cache-lifetime":"10","gallery":"yep","private":"nope","hide-on-desktop":"nope","hide-on-mobile":"nope","heading":"","headingcolor":"rgb(154, 78, 141)","subheading":"","subheadingcolor":"rgb(114, 112, 114)","hhalign":"center","bgcolor":"rgb(229, 229, 229)","filter":"yep","filtercolor":"rgb(205, 205, 205)","mobileslider":"nope","viewportin":"yep","layout":"grid","width":"260","margin":"20","theme":"classic","gc-style":"style-1","cardcolor":"rgb(255, 255, 255)","namecolor":"rgb(154, 78, 141)","textcolor":"rgb(85, 85, 85)","linkscolor":"rgb(94, 159, 202)","restcolor":"rgb(132, 118, 129)","shadow":"rgba(0, 0, 0, 0.22)","bcolor":"rgba(240, 237, 231, 0.4)","talign":"left","gf-style":"style-3","fcardcolor":"rgb(64, 68, 71)","fscardcolor":"rgb(44, 45, 46)","ftextcolor":"rgb(255, 255, 255)","fnamecolor":"rgb(94, 191, 255)","frestcolor":"rgb(175, 195, 208)","fbcolor":"rgba(255, 255, 255, 0.4)","mborder":"nope","ftalign":"center","compact-style":"c-style-1","cnamecolor":"rgb(154, 78, 141)","ctextcolor":"rgb(85, 85, 85)","clinkscolor":"rgb(94, 159, 202)","crestcolor":"rgb(132, 118, 129)","cbcolor":"rgb(226, 226, 226)","cmeta":"upic","calign":"left","cards-num":"3","scrolltop":"yep","css":""},"id3":{"id":"3","name":"Youtube - Videos","feeds":"[{\"timeline-type\":\"user_timeline\",\"content\":\"ishafoundation\",\"id\":\"hs51452\",\"type\":\"youtube\",\"filter-by-words\":\"\"},{\"timeline-type\":\"user_timeline\",\"content\":\"sadhguru\",\"id\":\"rn33045\",\"type\":\"youtube\",\"filter-by-words\":\"\"}]","order":"smartCompare","posts":"40","days":"","page-posts":"20","cache":"yep","cache-lifetime":"30","gallery":"yep","private":"nope","hide-on-desktop":"nope","hide-on-mobile":"nope","heading":"Sadhguru & Isha on Youtube","headingcolor":"rgb(185, 102, 36)","subheading":"","subheadingcolor":"rgb(114, 112, 114)","hhalign":"center","bgcolor":"rgba(229, 229, 229, 0)","filter":"yep","filtercolor":"rgba(90, 90, 90, 0.73)","mobileslider":"nope","viewportin":"yep","layout":"grid","width":"260","margin":"20","theme":"flat","gc-style":"style-1","cardcolor":"rgb(255, 255, 255)","namecolor":"rgb(154, 78, 141)","textcolor":"rgb(85, 85, 85)","linkscolor":"rgb(94, 159, 202)","restcolor":"rgb(132, 118, 129)","shadow":"rgba(0, 0, 0, 0.22)","bcolor":"rgba(240, 237, 231, 0.4)","talign":"left","gf-style":"style-1","fcardcolor":"rgb(59, 59, 59)","fscardcolor":"rgb(59, 59, 59)","ftextcolor":"rgb(209, 209, 209)","fnamecolor":"rgb(242, 167, 29)","frestcolor":"rgb(191, 191, 191)","fbcolor":"rgba(255, 255, 255, 0.11)","mborder":"nope","ftalign":"center","compact-style":"c-style-1","cnamecolor":"rgb(154, 78, 141)","ctextcolor":"rgb(85, 85, 85)","clinkscolor":"rgb(94, 159, 202)","crestcolor":"rgb(132, 118, 129)","cbcolor":"rgb(226, 226, 226)","cmeta":"upic","calign":"left","cards-num":"3","scrolltop":"yep","css":""},"id4":{"id":"4","name":"youtube channel2","feeds":"[{\"timeline-type\":\"channel\",\"content\":\"UCNgXnBY3E9ghUf43ijfaXcQ\",\"id\":\"kt33740\",\"type\":\"youtube\",\"filter-by-words\":\"\"}]","order":"smartCompare","posts":"40","days":"","page-posts":"20","cache":"yep","cache-lifetime":"10","gallery":"yep","private":"nope","hide-on-desktop":"nope","hide-on-mobile":"nope","heading":"","headingcolor":"rgb(154, 78, 141)","subheading":"","subheadingcolor":"rgb(114, 112, 114)","hhalign":"center","bgcolor":"rgb(229, 229, 229)","filter":"yep","filtercolor":"rgb(205, 205, 205)","mobileslider":"nope","viewportin":"yep","layout":"grid","width":"260","margin":"20","theme":"classic","gc-style":"style-1","cardcolor":"rgb(255, 255, 255)","namecolor":"rgb(154, 78, 141)","textcolor":"rgb(85, 85, 85)","linkscolor":"rgb(94, 159, 202)","restcolor":"rgb(132, 118, 129)","shadow":"rgba(0, 0, 0, 0.22)","bcolor":"rgba(240, 237, 231, 0.4)","talign":"left","gf-style":"style-3","fcardcolor":"rgb(64, 68, 71)","fscardcolor":"rgb(44, 45, 46)","ftextcolor":"rgb(255, 255, 255)","fnamecolor":"rgb(94, 191, 255)","frestcolor":"rgb(175, 195, 208)","fbcolor":"rgba(255, 255, 255, 0.4)","mborder":"nope","ftalign":"center","compact-style":"c-style-1","cnamecolor":"rgb(154, 78, 141)","ctextcolor":"rgb(85, 85, 85)","clinkscolor":"rgb(94, 159, 202)","crestcolor":"rgb(132, 118, 129)","cbcolor":"rgb(226, 226, 226)","cmeta":"upic","calign":"left","cards-num":"3","scrolltop":"yep","css":""},"id5":{"id":"5","name":"","feeds":"","order":"smartCompare","posts":"40","days":"","page-posts":"20","cache":"yep","cache-lifetime":"10","gallery":"yep","private":"nope","hide-on-desktop":"nope","hide-on-mobile":"nope","heading":"","headingcolor":"rgb(154, 78, 141)","subheading":"","subheadingcolor":"rgb(114, 112, 114)","hhalign":"center","bgcolor":"rgb(229, 229, 229)","filter":"yep","filtercolor":"rgb(205, 205, 205)","mobileslider":"nope","viewportin":"yep","width":"260","margin":"20","theme":"classic","gc-style":"style-1","cardcolor":"rgb(255,255,255)","namecolor":"rgb(154, 78, 141)","textcolor":"rgb(85,85,85)","linkscolor":"rgb(94, 159, 202)","restcolor":"rgb(132, 118, 129)","shadow":"rgba(0, 0, 0, 0.22)","bcolor":"rgba(240, 237, 231, 0.4)","talign":"left","gf-style":"style-3","fcardcolor":"rgb(64,68,71)","fscardcolor":"rgb(44,45,46)","ftextcolor":"rgb(255,255,255)","fnamecolor":"rgb(94,191,255);","frestcolor":"rgb(175,195,208);","fbcolor":"rgba(255,255,255,0.4)","mborder":"nope","ftalign":"center","compact-style":"c-style-1","cnamecolor":"rgb(154, 78, 141)","ctextcolor":"rgb(85,85,85)","clinkscolor":"rgb(94, 159, 202)","crestcolor":"rgb(132, 118, 129)","cbcolor":"rgba(226,226,226,1)","cmeta":"upic","calign":"left","cards-num":"3","scrolltop":"yep","css":""}},"open_in_new":"yep","filter_all":"All","filter_search":"Search","expand_text":"Expand","collapse_text":"Collapse","posted_on":"Posted on","show_more":"Show more","date_style":"agoStyleDate","dates":{"Yesterday":"Yesterday","s":"s","m":"m","h":"h","ago":"ago","months":["Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"]},"lightbox_navigate":"Navigate with arrow keys","server_time":"1500992890","isAdmin":"","forceHTTPS":"nope","isLog":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/flow-flow/js/require-utils.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mashnet = {"body":"","subject":"From_Isha_Sadhguru_Org","pinterest_select":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/mashshare-networks/assets/js/mashnet.min.js?ver=2.4.2'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold/js/avia-compat.js?ver=2'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold-child/js/avia.js?ver=1'></script>
+<link rel='https://api.w.org/' href='http://isha.sadhguru.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://isha.sadhguru.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://isha.sadhguru.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://isha.sadhguru.org/' />
+<link rel="alternate" type="application/json+oembed" href="http://isha.sadhguru.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fisha.sadhguru.org%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://isha.sadhguru.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fisha.sadhguru.org%2F&#038;format=xml" />
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<style type="text/css">img[src*="gstatic.com/"], img[src*="googleapis.com/"] { max-width: none; !important;}</style>
+<!-- Stream WordPress user activity plugin v3.2.0 -->
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Isha.sadhguru.org RSS2 Feed" href="http://isha.sadhguru.org/feed/" />
+<link rel="pingback" href="http://isha.sadhguru.org/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://isha.sadhguru.org/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="http://isha.sadhguru.org/wp-content/uploads/2015/06/Isha-Favicon.png" type="image/png">
+<script type="text/javascript">setTimeout(function(){var a=document.createElement("script");var b=document.getElementsByTagName("script")[0];a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0014/1971.js?"+Math.floor(new Date().getTime()/3600000);a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);</script>
+
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 3.8.5
+Installed: enfold
+AviaFramework Version: 4.6
+AviaBuilder Version: 0.9.4
+- - - - - - - - - - -
+ChildTheme: Enfold Child
+ChildTheme Version: 0.1.0
+ChildTheme Installed: enfold
+
+ML:128-PU:11-PLA:33
+WP:4.7.5
+Updates: disabled
+-->
+
+<style type='text/css'>
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;
+src: url('http://isha.sadhguru.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?v=3');
+src: url('http://isha.sadhguru.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?v=3#iefix') format('embedded-opentype'), 
+url('http://isha.sadhguru.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff?v=3') format('woff'), 
+url('http://isha.sadhguru.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf?v=3') format('truetype'), 
+url('http://isha.sadhguru.org/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg?v=3#entypo-fontello') format('svg');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+</style>
+<link rel="alternate" type="application/rss+xml" title="Sadhguru Spot" href="http://feeds.feedburner.com/SadhguruSpot" />
+<link rel="alternate" type="application/rss+xml" title="Isha Blog" href="http://feeds.ishafoundation.org/IshaBlog" />
+<script src="//jwpsrv.com/library/_ytk+nDaEeKuaCIACp8kUw.js"></script>
+
+
+<!-- FB pixels -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', '1393914664216937']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+
+<!-- Facebook audience pixel - jayaram loginid - 17 june 2015 -->
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1393914664216937&amp;ev=PixelInitialized" /></noscript>
+
+<style>
+        .book-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            z-index: 10001;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        .book-overlays {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            z-index: 10001;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .no-scroll {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .book-overlay.hide {
+            display: none;
+        }
+.book-overlays.hide {
+            display: none;
+        }
+
+    </style>
+
+</head>
+
+<body id="top" class="home page-template page-template-template-home page-template-template-home-php page page-id-24987 stretched open_sans  gecko windows group-blog masthead-fixed" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+<!--<div class="book-overlay hide">
+    <iframe id='ie-book-iframe' src="http://isha.sadhguru.org/inner-engineering-book-to/"
+            width="500" height="500" style="width: 100%; height: 100vh; border: none;"></iframe>
+</div>-->
+<!--<div class="book-overlays hide">
+    <iframe id='ie-book-iframe' src="http://isha.sadhguru.org/booktour/"
+            width="500" height="500" style="width: 100%; height: 100vh; border: none;"></iframe>
+</div>-->
+
+
+<!-- Google Tag Manager -->
+<script>
+    dataLayer = [ ];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5FMTNS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5FMTNS');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1941623-11', 'auto', {'allowLinker': true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['ishayoga.org','ishafoundation.org','prs.isha.in'] );
+  ga('send', 'pageview');
+
+</script>
+
+<script type='text/javascript'> (function() { var useSSL = 'https:' == document.location.protocol; var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js'; document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>'); })(); </script><script type='text/javascript'> googletag.cmd.push(function() { googletag.defineSlot('/197014169/Sticky_Bar_1500x95', [1500, 95], 'div-gpt-ad-1455461507019-0').addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.pubads().enableSyncRendering(); googletag.enableServices(); }); </script> <div id='div-gpt-ad-1455461507019-0'> <script type='text/javascript'> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1455461507019-0'); }); </script> </div>
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+
+
+
+	
+	<div id='wrap_all'>
+        
+<header id='header' class=' header_color dark_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_large av_header_sticky_disabled av_header_shrinking_disabled av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon av_header_unstick_top_disabled av_minimal_header av_bottom_nav_disabled  av_header_border_disabled'  role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+	<nav id='isha-menu' class='main_menu' data-selectname='Select a page'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="menu-responsive_menu-container"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-16236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><a class="no-scroll"href="#" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">SADHGURU</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-16246" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a class="no-scroll"href="http://isha.sadhguru.org/category/atoz/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">AtoZ</span></a></li>
+	<li id="menu-item-16247" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/videos/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Videos</span></a></li>
+	<li id="menu-item-16245" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/quotes/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Mystic Quotes</span></a></li>
+	<li id="menu-item-16244" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/spotonbackup/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Sadhguru Spot</span></a></li>
+</ul>
+</li>
+<li id="menu-item-16237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-2"><a class="no-scroll"href="#" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">ISHA</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-16248" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Isha Yoga Program</span></a></li>
+	<li id="menu-item-16249" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/centers/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Global Centers</span></a></li>
+	<li id="menu-item-16251" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/offerings-celebrations/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Special Offering</span></a></li>
+	<li id="menu-item-16253" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/isha-blog/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Isha Blog</span></a></li>
+</ul>
+</li>
+<li id="menu-item-16238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-3"><a class="no-scroll"href="#" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">CONNECT</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-16255" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/subscribe/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Subscribe</span></a></li>
+	<li id="menu-item-16256" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/mission/volunteering/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Volunteer</span></a></li>
+	<li id="menu-item-16257" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/donate/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Donate</span></a></li>
+	<li id="menu-item-16258" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/mobile-apps/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Sadhguru &#038; Isha Mobile Apps</span></a></li>
+	<li id="menu-item-20361" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="no-scroll"href="http://isha.sadhguru.org/atoz/navratri/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Navratri</span></a></li>
+</ul>
+</li>
+<li id="menu-item-16239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-4"><a class="no-scroll"href="#" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">INFORMATION</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-16260" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/schedule/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Schedule</span></a></li>
+	<li id="menu-item-16262" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/news/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">News</span></a></li>
+	<li id="menu-item-16263" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/press-media/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Press &#038; Media</span></a></li>
+	<li id="menu-item-16265" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/contact-us/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span></a></li>
+	<li id="menu-item-16267" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="no-scroll"href="http://isha.sadhguru.org/isha-links/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Isha Links</span></a></li>
+</ul>
+</li>
+</ul></div></nav>
+
+
+	<div  id='header_main' class='container_wrap container_wrap_logo'>
+
+				<div class="sudo-div"></div>
+		<div class='container'>
+
+			<div class='inner-container'>
+
+
+				<div class="top-navigation">
+					<div class="top-navigation-main">
+						<div class="header-search">
+							<ul role="list" class="search-wrapper">
+								<li role="listitem">
+																		<ul role="list" class="search-form-wrapper">
+										<li role="listitem">
+											<form role="search" method="get" class="search-form" action="http://isha.sadhguru.org/">
+                <label>
+                    <span class="screen-reader-text">Search for:</span>
+                    <input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:" />
+                </label>
+                <span class="ib-search-separator">  \  </span>
+                <input type="submit" class="search-submit" value="Search" />
+				<i class="icon-search"></i>
+            </form>										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div class="donate">
+														<a href="http://hyperurl.co/ryxjkg" title="Donate"><i class="icon-icon_donate_star"></i> Donate</a>
+						</div>
+					</div>
+				</div>
+
+
+
+				<strong class='logo'><a href='http://isha.sadhguru.org/'><img height='100' width='300' src='http://isha.sadhguru.org/wp-content/uploads/2016/08/Isha_logo-2x.png' alt='Isha.sadhguru.org' /></a></strong><nav class='main-navigation' id='site-navigation' data-selectname='Select a page'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" >				<a id="primary-nav-button" href="">All Sections   <i class="icon-menu"></i></a>
+				<a href="#" title="Close" class="close-icon">CLOSE<i class="icon-cancel"></i></a>
+				<div class="iso-new-wrapper"><div class="menu-global-india-menu-container"><ul id="rtp-header-menu" class="menu primary-menu"><li id="menu-item-24884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24884"><a>Sadhguru</a>
+<ul class="sub-menu">
+	<li id="menu-item-24885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24885"><a class="no-scroll"href="http://isha.sadhguru.org/man/">Man</a></li>
+	<li id="menu-item-24886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24886"><a class="no-scroll"href="http://isha.sadhguru.org/mystic/">Mystic</a></li>
+	<li id="menu-item-24887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24887"><a class="no-scroll"href="http://isha.sadhguru.org/mission/">Mission</a></li>
+</ul>
+</li>
+<li id="menu-item-24888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24888"><a>Read</a>
+<ul class="sub-menu">
+	<li id="menu-item-24889" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24889"><a>Sadhguru Articles</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24890"><a class="no-scroll"href="http://isha.sadhguru.org/blog/sadhguru/">Master&#8217;s Words</a></li>
+		<li id="menu-item-24891" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24891"><a class="no-scroll"href="http://isha.sadhguru.org/blog/yoga-meditation/">Yoga and Meditation</a></li>
+		<li id="menu-item-24892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24892"><a class="no-scroll"href="http://isha.sadhguru.org/blog/lifestyle/">Lifestyle</a></li>
+		<li id="menu-item-24893" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24893"><a class="no-scroll"href="http://isha.sadhguru.org/blog/social-impact/">Social Impact</a></li>
+		<li id="menu-item-24986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24986"><a class="no-scroll"href="http://isha.sadhguru.org/blog/inside-isha/">Inside Isha</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24895" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24895"><a class="no-scroll"href="http://isha.sadhguru.org/blog/sadhguru/spot/">Sadhguru Spot</a></li>
+	<li id="menu-item-24896" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24896"><a class="no-scroll"href="http://isha.sadhguru.org/quotes/">Daily Mystic Quote</a></li>
+	<li id="menu-item-50718" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50718"><a class="no-scroll"href="http://isha.sadhguru.org/blog/">Isha Blog</a></li>
+	<li id="menu-item-24897" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24897"><a class="no-scroll"href="http://isha.sadhguru.org/publications/">Books</a></li>
+	<li id="menu-item-24898" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24898"><a class="no-scroll"href="http://isha.sadhguru.org/subscribe/">NewsLetter</a></li>
+</ul>
+</li>
+<li id="menu-item-24899" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24899"><a>Watch</a>
+<ul class="sub-menu">
+	<li id="menu-item-24900" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24900"><a class="no-scroll"href="http://isha.sadhguru.org/blog/video/">Video</a></li>
+	<li id="menu-item-24901" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24901"><a class="no-scroll"target="_blank" href="http://inconversations.com">In conversation</a></li>
+	<li id="menu-item-24902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24902"><a class="no-scroll"target="_blank" href="https://www.ishashoppe.com/downloads/portfolio-type/videos/">Download</a></li>
+</ul>
+</li>
+<li id="menu-item-24903" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24903"><a>Meet</a>
+<ul class="sub-menu">
+	<li id="menu-item-24905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24905"><a class="no-scroll"href="http://isha.sadhguru.org/schedule/">Sadhguru’s Schedule</a></li>
+	<li id="menu-item-24906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24906"><a class="no-scroll"target="_blank" href="http://www.ishafoundation.org/Sadhguru/sadhguru-darshan-behold-the-divine-isha-yoga-center-isha-foundation.isa">Darshan</a></li>
+	<li id="menu-item-24907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24907"><a class="no-scroll"target="_blank" href="http://www.ishafoundation.org/Get-Involved/isha-yoga-meditators-sathsangs-around-the-world-isha-foundation.isa">Sathsang</a></li>
+</ul>
+</li>
+<li id="menu-item-24908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24908"><a>Meditate</a>
+<ul class="sub-menu">
+	<li id="menu-item-24909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24909"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/isha-kriya/">Isha Kriya</a></li>
+	<li id="menu-item-24910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24910"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/easy-yoga-solutions/chit-shakthi/">Chit Shakti</a></li>
+</ul>
+</li>
+<li id="menu-item-24911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24911"><a>Yoga</a>
+<ul class="sub-menu">
+	<li id="menu-item-24912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24912"><a>Beginner’s programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24914" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24914"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/hatha-yoga/">Hatha Yoga programs</a></li>
+		<li id="menu-item-24915" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24915"><a class="no-scroll"href="http://isha.sadhguru.org/namaskar/">Namaskar &#8211; Yoga for All</a></li>
+		<li id="menu-item-24916" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24916"><a class="no-scroll"href="http://isha.sadhguru.org/5-min-practices/">5 Min Practices</a></li>
+		<li id="menu-item-24913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24913"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/inner-engineering/">Inner Engineering</a></li>
+		<li id="menu-item-24917" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24917"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/childrens-programs/">Children’s programs</a></li>
+		<li id="menu-item-24918" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24918"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/advanced-yoga/guru-pooja/">Guru Pooja</a></li>
+		<li id="menu-item-24969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24969"><a class="no-scroll"target="_blank" href="http://www.ishayoga.org/en/introduction">Uyirnokkam</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24919" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24919"><a>Advanced Programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24920" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24920"><a class="no-scroll"href="http://isha.sadhguru.org/bhava-spandana/">Bhava Spandana</a></li>
+		<li id="menu-item-24921" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24921"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/advanced-yoga/shoonya-intensive/">Shoonya Meditation</a></li>
+		<li id="menu-item-24922" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24922"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/advanced-yoga/samyama/">Samyama</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24923"><a>Become a Teacher</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24924"><a class="no-scroll"target="_blank" href="https://www.ishayoga.org/hata/teachertraining/">Hatha Yoga Teacher</a></li>
+		<li id="menu-item-24925" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24925"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/special-programs/teachers-training/">Isha Program Teacher</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24926"><a>Special Programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24927"><a class="no-scroll"target="_blank" href="http://www.sacredwalks.org/">Sacred Walks</a></li>
+		<li id="menu-item-24928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24928"><a class="no-scroll"target="_blank" href="http://www.ishafoundation.org/Isha-Yoga-Programs/special-programs.isa">Past Programs</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-50721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50721"><a>Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-50730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50730"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/special-programs/sacred-walks/">Sacred Walks</a></li>
+	<li id="menu-item-50719" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50719"><a class="no-scroll"href="http://isha.sadhguru.org/contact-us/">Visit Isha Center</a></li>
+</ul>
+</li>
+<li id="menu-item-24932" class="left-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24932"><a>Outreach</a>
+<ul class="sub-menu">
+	<li id="menu-item-24933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24933"><a class="no-scroll"href="http://isha.sadhguru.org/social-outreach/isha-vidhya/">Education</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24934" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24934"><a class="no-scroll"href="http://isha.sadhguru.org/social-outreach/isha-vidhya/">Isha Vidhya &#038; Government School Adoption Program</a></li>
+		<li id="menu-item-24935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24935"><a class="no-scroll"href="http://isha.sadhguru.org/offerings-celebrations/education/isha-home-school/">Isha Home School</a></li>
+		<li id="menu-item-24936" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24936"><a class="no-scroll"href="http://isha.sadhguru.org/offerings-celebrations/education/isha-samskriti/">Isha Samskriti</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24937"><a class="no-scroll"href="http://isha.sadhguru.org/social-outreach/rural-rejuvenation/">Health</a></li>
+	<li id="menu-item-24938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24938"><a class="no-scroll"href="http://isha.sadhguru.org/social-outreach/project-greenhands/">Environment</a></li>
+</ul>
+</li>
+<li id="menu-item-24971" class="left-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24971"><a>Centers</a>
+<ul class="sub-menu">
+	<li id="menu-item-24972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24972"><a>Consecrated Spaces</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24973"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/dhyanalinga/">Dhyanalinga</a></li>
+		<li id="menu-item-24974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24974"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/linga-bhairavi/">Linga Bhairavi</a></li>
+		<li id="menu-item-24975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24975"><a class="no-scroll"href="http://adiyogi.org/">Adi Yogi Abode</a></li>
+		<li id="menu-item-24976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24976"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/theerthakunds-sacred-water-bodies/">Theerthakund</a></li>
+		<li id="menu-item-24977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24977"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/spanda-hall/">Spanda Hall</a></li>
+		<li id="menu-item-24978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24978"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/mahima/">Mahima Dome</a></li>
+		<li id="menu-item-24979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24979"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/adiyogi-alayam/">Adi Yogi Alayam</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24980" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24980"><a>Centers</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24981" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24981"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/isha-yoga-center/">Isha Yoga Center, India</a></li>
+		<li id="menu-item-24982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24982"><a class="no-scroll"href="http://isha.sadhguru.org/us-en/isha-usa/">Isha Institute of Inner Sciences, USA</a></li>
+		<li id="menu-item-24984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24984"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/centers/">Global Centers</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-24985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24985"><a class="no-scroll"target="_blank" href="https://www.ishashoppe.com/">Shop</a>
+<ul class="sub-menu">
+	<li id="menu-item-50733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50733"><a class="no-scroll"href="http://www.ishashoppe.com/">Isha Shoppe</a></li>
+	<li id="menu-item-50734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50734"><a class="no-scroll"href="http://www.ishashoppe.com/downloads/">Isha Downloads</a></li>
+	<li id="menu-item-53861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53861"><a class="no-scroll"href="http://isha.sadhguru.org/kailash-teerth/">Kailash Teerth</a></li>
+</ul>
+</li>
+<li id="menu-item-24951" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24951"><a class="no-scroll"href="http://isha.sadhguru.org/press-media">Media</a></li>
+<li id="menu-item-24952" class="left-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24952"><a>Cocktail</a>
+<ul class="sub-menu">
+	<li id="menu-item-24953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24953"><a class="no-scroll"href="http://isha.sadhguru.org/subscribe/">Subscribe</a></li>
+	<li id="menu-item-24954" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24954"><a class="no-scroll"href="http://isha.sadhguru.org/volunteer/">Volunteering</a></li>
+	<li id="menu-item-24955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24955"><a class="no-scroll"href="http://isha.sadhguru.org/blog/inside-isha/announcements/">Announcements</a></li>
+	<li id="menu-item-24956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24956"><a>Listen</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24957"><a class="no-scroll"href="http://isha.sadhguru.org/blog/tag/podcast/">Podcast</a></li>
+		<li id="menu-item-24958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24958"><a class="no-scroll"href="http://isha.sadhguru.org/music/">Music</a></li>
+		<li id="menu-item-24959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24959"><a class="no-scroll"target="_blank" href="http://ishafoundation.org/callertunes/">Caller Tunes</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24960" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24960"><a>Celebrations/Events</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24961"><a class="no-scroll"target="_blank" href="http://www.ishafoundation.org/Inner-Transformation/mahasathsang.isa">Mahasathsang</a></li>
+		<li id="menu-item-24962" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24962"><a class="no-scroll"target="_blank" href="http://isha.sadhguru.org/mahashivratri/">Mahashivratri</a></li>
+		<li id="menu-item-51003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51003"><a class="no-scroll"href="http://isha.sadhguru.org/guru-purnima/">Guru Purnima</a></li>
+		<li id="menu-item-51014" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51014"><a class="no-scroll"href="http://isha.sadhguru.org/international-yoga-day/">International Yoga Day</a></li>
+	</ul>
+</li>
+	<li id="menu-item-24964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24964"><a class="no-scroll"target="_blank" href="http://isha.sadhguru.org/offerings-celebrations/education/isha-insight/">Isha Insight</a></li>
+	<li id="menu-item-24965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24965"><a class="no-scroll"target="_blank" href="http://www.ishalife.org/">Isha Life</a></li>
+	<li id="menu-item-54168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54168"><a class="no-scroll"href="http://isha.sadhguru.org/offerings-celebrations/health/isha-arogya/">Isha Arogya</a></li>
+	<li id="menu-item-24966" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24966"><a class="no-scroll"href="http://isha.sadhguru.org/offerings-celebrations/business/isha-business/">Isha Business</a></li>
+	<li id="menu-item-24967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24967"><a class="no-scroll"target="_blank" href="http://www.ishafoundation.org/Inner-Transformation/sanyas-brahmacharya-path-of-the-divine-sadhguru-isha-foundation.isa">Sanyas</a></li>
+	<li id="menu-item-24968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24968"><a class="no-scroll"href="http://isha.sadhguru.org/kayantha-sthanam-isha-cremation-services/">Crematorium</a></li>
+</ul>
+</li>
+</ul></div></div>
+				<!-- end inner-container-->
+			</div>
+
+			<!-- end container-->
+		</div>
+
+		<!-- end container_wrap-->
+	</div>
+
+	<div class='header_bg'></div>
+
+	<!-- end header -->
+</header>
+
+        <style>
+.avia-section.av-minimum-height .container {
+    opacity: 1 !important;
+}
+            .avia-content-slider .fake-thumbnail .slide-image {
+                 border-style: none;
+                 min-height: 0px;
+            }
+
+            @media screen and (min-width: 801px) and (max-width: 1400px) {
+            .slide-entry-excerpt {
+                 font-size: 18px !important;
+                 line-height: 20px !important;
+            }
+            }
+            @media screen and (max-width: 800px) {
+            .slide-entry-excerpt {
+                 font-size: 14px !important;
+                 line-height: 16px !important;
+            }
+            }
+        </style>
+        		
+	<div id='main' data-scroll-offset='0'>
+	       
+	            
+	
+<div class='container_wrap container_wrap_first main_color sidebar_right'>
+
+	<div class='container-full'>
+
+		<main class='template-archives content av-content-small alpha units'  role="main" itemprop="mainContentOfPage" >
+
+			<div class="entry-content clearfix">
+
+				<div class="ib-three-images-wrapper">
+										<div class="ib-three-images-single first-box">
+								<a href="http://isha.sadhguru.org/man/">
+									<img src="http://isha.sadhguru.org/wp-content/uploads/2016/08/ISO_Man.jpg" alt="Man" />
+									<div class="ib-details">
+										<h4>Man</h4>
+										<i class="icon-icon_arrow_right"></i>
+									</div>
+								</a>
+							</div><!-- .ib-three-images-single -->
+																										<div class="ib-three-images-single second-box">
+										<a href="http://isha.sadhguru.org/mystic/">
+											<img src="http://isha.sadhguru.org/wp-content/uploads/2016/08/ISO_Mystic.jpg" alt="Mystic" />
+											<div class="ib-details">
+												<h4>Mystic</h4>
+												<i class="icon-icon_arrow_right"></i>
+											</div>
+										</a>
+									</div><!-- .ib-three-images-single -->
+																												<div class="ib-three-images-single third-box">
+										<a href="http://isha.sadhguru.org/mission/">
+											<img src="http://isha.sadhguru.org/wp-content/uploads/2016/08/ISO_Mission.jpg" alt="Mission" />
+											<div class="ib-details">
+												<h4>Mission</h4>
+												<i class="icon-icon_arrow_right"></i>
+											</div>
+										</a>
+									</div><!-- .ib-three-images-single -->
+													</div><!-- .ib-three-images-wrapper -->
+
+								<div class=" ib-isha-message-wrapper">
+						<h4>&#8220;As there is a technology to create external wellbeing, there is a whole dimension of science and technology to create inner wellbeing&#8221;</h4>
+<p>&#8211; Sadhguru</p>
+					</div><!-- .ib-isha-message-wrapper -->
+												<div class="ib-isha-inner-engg-wrapper ">
+
+					<div class="ib-isha-inner-engg ib-isha-left">
+						<img src="http://isha.sadhguru.org/wp-content/uploads/2016/08/ISO_IEPanel.jpg" alt="Inner Engineering">						<div class="ib-isha-inner-engg-text">
+							<div class="inner-engg-left-top">
+								<h4 class="entry-title"><a href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/inner-engineering/" title="">Inner Engineering</a></h4>								<p>Technologies for Wellbeing</p>							</div>
+
+							<div class="inner-engg-left-bottom">
+								<p>A powerful program for self-transformation and inner exploration</p>																<a class="ib-isha-inner-engg-learn-link" href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/inner-engineering/" title="Learn More">
+										Learn More									</a>
+															</div>
+						</div>
+					</div><!-- .ib-isha-inner-engg -->
+					<div class="ib-isha-inner-engg-ajax ib-isha-right">
+												<div class="ib-isha-inner-engg ib-isha-right non-india  ">
+
+							<h4>Inner Engineering Online</h4>							<ul>
+<li>Seven, 90-minute sessions and guided meditations</li>
+<li>Convenience of doing in own space and time</li>
+</ul>
+
+															<a href="http://innerengineering.com/" title="" target="_blank" class="ib-isha-inner-engg-event-link">
+									Register now								</a>
+							
+							<hr>
+							<p class="webinar">
+									<a class="ib-isha-inner-engg-webinar-link" target="_blank" href="https://innerengineering.com" title="Free Webinar">										Free Webinar										</a>
+								</p>							<p class="intro">Introduction to Inner Engineering</p>							<h5>July 18, 8pm CT</h5>
+						</div><!-- .ib-isha-inner-engg -->
+					</div><!-- .ib-isha-inner-engg-ajax -->
+				</div><!-- .ib-isha-inner-engg-wrapper -->
+
+
+				<div class="ib-isha-mystic-wrapper">
+					
+					<div class="ib-isha-mystic-inner ib-isha-kriya">
+						<i class="icon-illustration_meditating_flower"></i>
+						<h4 class="entry-title">Isha Kriya</h4>						 <p>Free Guided Meditation</p>						<a href="http://ishafoundation.org/ishakriya" title="Meditate">Meditate</a>					</div>
+					
+					<div class="ib-isha-mystic-inner ib-mystic-quote">
+						<h4 class="entry-title">Mystic Quote</h4>
+						<p id="date-time">July 25, 2017</p>
+												<p id="ib-shadhguru-quote">
+								"In pursuit of human wellbeing, we have ripped the planet apart, not knowing the only way to wellbeing is to dig deeper into ourselves."							</p>
+							<p>- Sadhguru</p>
+												<a href="http://isha.sadhguru.org/quotes/" title="subscribe">Subscribe ></a><br>
+						<a href="http://isha.sadhguru.org/quotes/" title="gettheapp">Get the App ></a>
+					</div><!-- .ib-isha-mystic-inner -->
+										<div class="ib-isha-mystic-inner ib-consecrated-space">
+						<img src="http://isha.sadhguru.org/wp-content/uploads/2016/08/ISO_home_Consec_IN.jpg" alt="">						<div class="ib-consecrated-space-text">
+							<h4 class="entry-title">Consecrated</h4>
+<p>Spaces</p>
+														<a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/dhyanalinga/" title="Learn More">
+									Learn More									</a>
+														</div>
+					</div>
+
+				</div>
+				<div class="ib-isha-video-wrapper">
+					
+					<div class="ib-isha-video-inner ib-isha-video-thumbnail">
+						<img src="https://img.youtube.com/vi/CmVQuiT0OTw/maxresdefault.jpg" alt="Fighting Your Own Thoughts" />						<a href="" data-youtube-id="CmVQuiT0OTw" class="youtube-home-video-play" title="Fighting Your Own Thoughts">Play</a>					</div>
+
+					<div class="ib-isha-video-inner ib-isha-video-text">
+						
+						<h4 class="entry-title">
+								<a href="http://isha.sadhguru.org/blog/video/fighting-your-own-thoughts/" title="Fighting Your Own Thoughts">
+									Fighting Your Own Thoughts								</a>
+							</h4>
+
+						
+												<p>
+								Don’t try to stop negative thoughts, says Sadhguru, as there is no such thing as a positive or negative <a class="ib-video-more" href="http://isha.sadhguru.org/blog/video/fighting-your-own-thoughts/" title="Fighting Your Own Thoughts">More</a>							</p>
+												<a class="ib-all-videos" href="http://isha.sadhguru.org/blog/video/" title="allvideos">All Videos</a>					</div>
+
+										<div class="ib-isha-video-inner ib-isha-topics">
+							<h4 class="entry-title">Topics</h4>
+<ul>
+<li><a href="http://isha.sadhguru.org/blog/tag/spirituality/" title="Spirituality">Spirituality ></a></li>
+<li><a href="http://isha.sadhguru.org/blog/tag/yoga/" title="Yoga">Yoga ></a></li>
+<li><a href="http://isha.sadhguru.org/blog/tag/mind/" title="Mind">Mind ></a></li>
+<li><a href="http://isha.sadhguru.org/blog/tag/health/" title="Health">Health ></a></li>
+<li><a href="http://isha.sadhguru.org/blog/tag/life/" title="Life">Life ></a></li>
+<li><a href="http://isha.sadhguru.org/blog/tag/indian-culture/" title="Indian Culture">Indian Culture ></a></li>
+<li><a href="http://isha.sadhguru.org/blog/tag/leadership/" title="Leadership">Leadership ></a></li>
+<li><a href="http://isha.sadhguru.org/blog/tag/in-conversation-with-the-mystic/" title="In Conversation with the Mystic">In Conversation with the Mystic ></a></li>
+</ul>							</div>
+											</div><!-- .ib-isha-video-wrapper -->
+
+				<div class="ib-isha-recentpost-wrapper">
+										<div class="ib-isha-recentpost-inner ib-isha-latest-article">
+						<h4 class="entry-title"><a href="" title="LATEST ARTICLE">LATEST ARTICLE</h4></a>						<hr>
+						<div class="ib-isha-recentpost-inner-text">
+							<a href="http://isha.sadhguru.org/blog/sadhguru/masters-words/view-from-projection-room/" title="The View from the Projection Room" class="ib-recent-posts-thumb"><img src="http://isha.sadhguru.org/blog/wp-content/uploads/2017/07/the-view-from-the-projection-room-20090223_CHI_0158-e-340x190.jpg" alt="The View from the Projection Room"></a>							<h5 class="entry-title name"><a href="http://isha.sadhguru.org/blog/sadhguru/masters-words/view-from-projection-room/" title="The View from the Projection Room">The View from the Projection Room</a></h5>							<p>Though the drama of life is always on, Sadhguru reminds us, the work of the Guru is not to take you to the movies, but to show you the projection room. The problem, he explains, is that you have a role to play, but you are not holding the hand of the director.
+...<a href="http://isha.sadhguru.org/blog/sadhguru/masters-words/view-from-projection-room/" title="The View from the Projection Room">Read Article</a> </p>							<p class="post-date">July 13, 2017</p>						</div>
+					</div>
+
+
+
+										<div class="ib-isha-recentpost-inner ib-isha-sadhguru-spot">
+						<h4 class="entry-title"><a href="" title="SADHGURU SPOT">SADHGURU SPOT</a></h4>						<hr>
+						<div class="ib-isha-recentpost-inner-text">
+							<a href="http://isha.sadhguru.org/blog/sadhguru/spot/be-careful-what-you-wish-for/" title="Be Careful What You Wish For" class="ib-recent-posts-thumb"><img src="http://isha.sadhguru.org/blog/wp-content/uploads/2017/07/be-careful-what-you-wish-for-20170323_HKS_0044-e-340x190.jpg" alt="Be Careful What You Wish For"></a>							<h5 class="entry-title name"><a href="http://isha.sadhguru.org/blog/sadhguru/spot/be-careful-what-you-wish-for/" title="Be Careful What You Wish For">Be Careful What You Wish For</a></h5>							<p>On this Spot, Sadhguru writes about endless wants, using life energy for material purposes, and why all that won’t get you anywhere. In this context, he relates how, as a young boy, his intrigue about the beyond led him on fearless explorations into the realm of ghosts, spirits, and the occult, and what insight he gained from this experience. And of course, he won’t leave us without a hint on what we can do to live a wonderful life.
+...<a href="http://isha.sadhguru.org/blog/sadhguru/spot/be-careful-what-you-wish-for/" title="Be Careful What You Wish For">Read Article</a> </p>							<p class="post-date">July 13, 2017</p>						</div>
+					</div>
+
+										<div class="ib-isha-recentpost-inner ib-isha-inside-isha">
+						<h4 class="entry-title"><a href="" title="INSIDE ISHA">INSIDE ISHA</a></h4>						<hr>
+						<div class="ib-isha-recentpost-inner-text">
+							<a href="http://isha.sadhguru.org/blog/inside-isha/announcements/damaru-new-album-sounds-isha/" title="Damaru – New Album from Sounds of Isha" class="ib-recent-posts-thumb"><img src="http://isha.sadhguru.org/blog/wp-content/uploads/2017/07/damaru-new-album-from-sounds-of-isha-340x190.jpg" alt="Damaru – New Album from Sounds of Isha"></a>							<h5 class="entry-title name"><a href="http://isha.sadhguru.org/blog/inside-isha/announcements/damaru-new-album-sounds-isha/" title="Damaru – New Album from Sounds of Isha">Damaru – New Album from Sounds of Isha</a></h5>							<p>Damaru, Sounds of Isha’s newest album, features a collection of your favorite chants and songs on Adiyogi.
+...<a href="http://isha.sadhguru.org/blog/inside-isha/announcements/damaru-new-album-sounds-isha/" title="Damaru – New Album from Sounds of Isha">Read Article</a> </p>							<p class="post-date">July 13, 2017</p>						</div>
+					</div>
+
+				</div><!-- .ib-isha-video-wrapper -->
+
+
+			</div>
+			<!--end content-->
+		</main>
+
+		<aside class='sidebar sidebar_right  alpha units'  role="complementary" itemscope="itemscope" itemtype="https://schema.org/WPSideBar" ><div class='inner_sidebar extralight-border'><section class='widget widget_pages'><h3 class='widgettitle'>Pages</h3><ul><li class="page_item page-item-23881"><a href="http://isha.sadhguru.org/5-min-practices/">5-Minute Practices</a></li>
+<li class="page_item page-item-22240"><a href="http://isha.sadhguru.org/publications/a-taste-of-well-being/">A Taste of Well-Being</a></li>
+<li class="page_item page-item-14923"><a href="http://isha.sadhguru.org/social-outreach/rural-rejuvenation/">Action for Rural Rejuvenation</a></li>
+<li class="page_item page-item-14914"><a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/adiyogi-alayam/">Adiyogi Alayam: Experiencing Classical Hatha Yoga</a></li>
+<li class="page_item page-item-53371"><a href="http://isha.sadhguru.org/adiyogi-donate/">Adiyogi Donate</a></li>
+<li class="page_item page-item-17000 page_item_has_children"><a href="http://isha.sadhguru.org/isha-yoga-programs/advanced-yoga/">Advanced Yoga</a></li>
+<li class="page_item page-item-22673 page_item_has_children"><a href="http://isha.sadhguru.org/africa/">Africa</a></li>
+<li class="page_item page-item-11493"><a href="http://isha.sadhguru.org/quotes/almost-finished/">Almost finished&#8230;</a></li>
+<li class="page_item page-item-56679"><a href="http://isha.sadhguru.org/guru-purnima/already-registered/">Already Registered</a></li>
+<li class="page_item page-item-23734"><a href="http://isha.sadhguru.org/sadhguru-in-united-nations-2016/already-registered/">Already Registered</a></li>
+<li class="page_item page-item-54227"><a href="http://isha.sadhguru.org/bangalore/already-registered/">Already Registered</a></li>
+<li class="page_item page-item-22407"><a href="http://isha.sadhguru.org/publications/anand-lahar-hindi/">Anand Lahar Hindi</a></li>
+<li class="page_item page-item-22335"><a href="http://isha.sadhguru.org/publications/ananda-alai-tamil/">Ananda Alai Tamil</a></li>
+<li class="page_item page-item-22344"><a href="http://isha.sadhguru.org/publications/ananda-lahari-telugu/">Ananda lahari Telugu</a></li>
+<li class="page_item page-item-22342"><a href="http://isha.sadhguru.org/publications/anandha-lahari-malayalam/">Anandha Lahari Malayalam</a></li>
+<li class="page_item page-item-56173"><a href="http://isha.sadhguru.org/app/">App</a></li>
+<li class="page_item page-item-53675"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/ashram-guidelines/">Ashram Guidelines</a></li>
+<li class="page_item page-item-16821"><a href="http://isha.sadhguru.org/yoga-classes/atlanta/">Atlanta Events</a></li>
+<li class="page_item page-item-16817"><a href="http://isha.sadhguru.org/yoga-classes/bangalore/">Bangalore Events</a></li>
+<li class="page_item page-item-17003 page_item_has_children"><a href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/">Basic Yoga</a></li>
+<li class="page_item page-item-16843"><a href="http://isha.sadhguru.org/yoga-classes/berlin/">Berlin Events</a></li>
+<li class="page_item page-item-22485"><a href="http://isha.sadhguru.org/publications/body-the-greatest-gadget/">Body The Greatest Gadget</a></li>
+<li class="page_item page-item-16861"><a href="http://isha.sadhguru.org/yoga-classes/brisbane/">Brisbane Events</a></li>
+<li class="page_item page-item-16983 page_item_has_children"><a href="http://isha.sadhguru.org/offerings-celebrations/business/">Business</a></li>
+<li class="page_item page-item-21484"><a href="http://isha.sadhguru.org/mission/global-harmony/world-peace-day/calamity-a-manmade-thing/">Calamity &#8211; A Manmade Thing</a></li>
+<li class="page_item page-item-57526"><a href="http://isha.sadhguru.org/chennai/enquire-failure/">Chennai Enquire Failure</a></li>
+<li class="page_item page-item-57525"><a href="http://isha.sadhguru.org/chennai/enquire-success/">Chennai Enquire Success</a></li>
+<li class="page_item page-item-16355"><a href="http://isha.sadhguru.org/yoga-classes/chennai/">Chennai Events</a></li>
+<li class="page_item page-item-14938"><a href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/childrens-programs/">Children&#8217;s Programs</a></li>
+<li class="page_item page-item-3718"><a href="http://isha.sadhguru.org/isha-yoga-programs/easy-yoga-solutions/chit-shakthi/">Chit Shakti</a></li>
+<li class="page_item page-item-56678"><a href="http://isha.sadhguru.org/guru-purnima/confirm-your-registration/">Confirm Your Registration</a></li>
+<li class="page_item page-item-23723"><a href="http://isha.sadhguru.org/sadhguru-in-united-nations-2016/confirm-your-registration/">Confirm Your Registration</a></li>
+<li class="page_item page-item-54204"><a href="http://isha.sadhguru.org/bangalore/confirm-your-registration/">Confirm Your Registration</a></li>
+<li class="page_item page-item-16980 page_item_has_children"><a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/">Consecrated Spaces</a></li>
+<li class="page_item page-item-21488"><a href="http://isha.sadhguru.org/mission/global-harmony/world-peace-day/culture-of-peace-free-ebook/">Culture of Peace &#8211; Free Ebook</a></li>
+<li class="page_item page-item-56649"><a href="http://isha.sadhguru.org/damaru/">Damaru</a></li>
+<li class="page_item page-item-16492"><a href="http://isha.sadhguru.org/yoga-classes/delhi/">Delhi events</a></li>
+<li class="page_item page-item-55442"><a href="http://isha.sadhguru.org/dev-template-inner-engineering/">Dev Inner Engineering</a></li>
+<li class="page_item page-item-55664"><a href="http://isha.sadhguru.org/dev-new-template-bangalore/">Dev New Template Bangalore</a></li>
+<li class="page_item page-item-56008"><a href="http://isha.sadhguru.org/dev-new-version-bangalore/">Dev New version Bangalore</a></li>
+<li class="page_item page-item-15341"><a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/dhyanalinga/">Dhyanalinga &#8211; The Eternal Form</a></li>
+<li class="page_item page-item-17020 page_item_has_children"><a href="http://isha.sadhguru.org/isha-yoga-programs/easy-yoga-solutions/">Easy Yoga Solutions</a></li>
+<li class="page_item page-item-16996 page_item_has_children"><a href="http://isha.sadhguru.org/offerings-celebrations/education/">Education</a></li>
+<li class="page_item page-item-18307"><a href="http://isha.sadhguru.org/yoga-classes/europe/">Europe Events</a></li>
+<li class="page_item page-item-53667"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/event-overview/">Event Overview</a></li>
+<li class="page_item page-item-21471"><a href="http://isha.sadhguru.org/mission/global-harmony/peace-summit/forgiveness-and-reconciliation/">Forgiveness and Reconciliation</a></li>
+<li class="page_item page-item-16846"><a href="http://isha.sadhguru.org/yoga-classes/frankfurt/">Frankfurt Events</a></li>
+<li class="page_item page-item-15037"><a href="http://isha.sadhguru.org/isha-global-centers/centers/">Global Centers</a></li>
+<li class="page_item page-item-15034"><a href="http://isha.sadhguru.org/isha-yoga-programs/advanced-yoga/guru-pooja/">Guru Pooja</a></li>
+<li class="page_item page-item-15036"><a href="http://isha.sadhguru.org/offerings-celebrations/special-events/guru-pournami/">Guru Pournami</a></li>
+<li class="page_item page-item-20069"><a href="http://isha.sadhguru.org/guru-purnima/asksadhguru/">Guru Purnima</a></li>
+<li class="page_item page-item-24044 page_item_has_children"><a href="http://isha.sadhguru.org/Gurupurnima/">Guru Purnima</a></li>
+<li class="page_item page-item-56689"><a href="http://isha.sadhguru.org/guru-purnima/live-webstream-2017/">Guru Purnima Live Webstream 09-07-2017</a></li>
+<li class="page_item page-item-5748"><a href="http://isha.sadhguru.org/mission/global-harmony/guru-sangamam/">Guru Sangamam</a></li>
+<li class="page_item page-item-15268"><a href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/hatha-yoga/">Hatha Yoga</a></li>
+<li class="page_item page-item-15267 page_item_has_children"><a href="http://isha.sadhguru.org/offerings-celebrations/health/">Health Quotes &#038; Health Tips from the Mystic Sadhguru</a></li>
+<li class="page_item page-item-16864"><a href="http://isha.sadhguru.org/yoga-classes/hongkong/">Hong Kong Events</a></li>
+<li class="page_item page-item-16824"><a href="http://isha.sadhguru.org/yoga-classes/houston/">Houston Events</a></li>
+<li class="page_item page-item-21486"><a href="http://isha.sadhguru.org/mission/global-harmony/world-peace-day/how-to-attain-inner-peace/">How to Attain Inner Peace?</a></li>
+<li class="page_item page-item-16536"><a href="http://isha.sadhguru.org/yoga-classes/hyderabad/">Hyderabad events</a></li>
+<li class="page_item page-item-55817"><a href="http://isha.sadhguru.org/conversation-karan-johar-live-webstream-04617/">In Conversation with Karan Johar Live Webstream 04-06-2017</a></li>
+<li class="page_item page-item-55225"><a href="http://isha.sadhguru.org/conversation-kiran-delayed-webstream-28417/">In Conversation with Kiran Delayed Webstream 28-04-2017</a></li>
+<li class="page_item page-item-22855"><a href="http://isha.sadhguru.org/africa/uganda/Inner-Engineering/">Inner Engineering</a></li>
+<li class="page_item page-item-15265"><a href="http://isha.sadhguru.org/isha-yoga-programs/basic-yoga/inner-engineering/">Inner Engineering</a></li>
+<li class="page_item page-item-23781"><a href="http://isha.sadhguru.org/publications/inner-engineering/">Inner Engineering</a></li>
+<li class="page_item page-item-53222"><a href="http://isha.sadhguru.org/inner-engineering-book/">Inner Engineering Book</a></li>
+<li class="page_item page-item-52678"><a href="http://isha.sadhguru.org/inner-engineering-book-to/">Inner Engineering Book Take Over</a></li>
+<li class="page_item page-item-55913"><a href="http://isha.sadhguru.org/inner-engineering-completion/">Inner Engineering Completion</a></li>
+<li class="page_item page-item-56530"><a href="http://isha.sadhguru.org/inner-engineering-enquire-failure/">Inner Engineering Enquire Failure</a></li>
+<li class="page_item page-item-56529"><a href="http://isha.sadhguru.org/inner-engineering-enquire-success/">Inner Engineering Enquire Success</a></li>
+<li class="page_item page-item-56332"><a href="http://isha.sadhguru.org/failure-ieo-online/">Inner Engineering Failure</a></li>
+<li class="page_item page-item-55588"><a href="http://isha.sadhguru.org/inner-engineering-online/">Inner Engineering Online</a></li>
+<li class="page_item page-item-23222"><a href="http://isha.sadhguru.org/africa/uganda/inner-engineering-register/">Inner Engineering Register</a></li>
+<li class="page_item page-item-52328"><a href="http://isha.sadhguru.org/inner-engineering-retreat-ca-may-2017/">Inner Engineering Retreat CA May 2017</a></li>
+<li class="page_item page-item-55752"><a href="http://isha.sadhguru.org/thank-you-ieo-online/">Inner Engineering Thank you</a></li>
+<li class="page_item page-item-22636"><a href="http://isha.sadhguru.org/Uganda-Inner-Engineering/">Inner Engineering With Sadhguru</a></li>
+<li class="page_item page-item-54040"><a href="http://isha.sadhguru.org/chennai-tamil/">Inner Engineering with Sadhguru in Chennai Tamil</a></li>
+<li class="page_item page-item-53359"><a href="http://isha.sadhguru.org/mumbai-pc/">Inner Engineering with Sadhguru in Mumbai</a></li>
+<li class="page_item page-item-53416"><a href="http://isha.sadhguru.org/mumbai-rm/">Inner Engineering with Sadhguru in Mumbai</a></li>
+<li class="page_item page-item-52137"><a href="http://isha.sadhguru.org/mumbai/">Inner Engineering with Sadhguru in Mumbai</a></li>
+<li class="page_item page-item-51148"><a href="http://isha.sadhguru.org/innovating-india-schooling-conference/">Innovating India’s Schooling – Conference</a></li>
+<li class="page_item page-item-13128"><a href="http://isha.sadhguru.org/isha-yoga-programs/special-programs/international-yoga-day/">International Day Of Yoga</a></li>
+<li class="page_item page-item-22658 page_item_has_children"><a href="http://isha.sadhguru.org/international-yoga-day/donate/">International Day of Yoga</a></li>
+<li class="page_item page-item-15032"><a href="http://isha.sadhguru.org/offerings-celebrations/health/isha-arogya/">Isha Arogya</a></li>
+<li class="page_item page-item-15060"><a href="http://isha.sadhguru.org/offerings-celebrations/business/isha-business/">Isha Business</a></li>
+<li class="page_item page-item-14060"><a href="http://isha.sadhguru.org/offerings-celebrations/education/isha-home-school/">Isha Home School</a></li>
+<li class="page_item page-item-14962"><a href="http://isha.sadhguru.org/offerings-celebrations/education/isha-insight/">Isha Insight</a></li>
+<li class="page_item page-item-14992"><a href="http://isha.sadhguru.org/isha-global-centers/isha-institute-of-inner-sciences/">Isha Institute of Inner-sciences</a></li>
+<li class="page_item page-item-19573"><a href="http://isha.sadhguru.org/isha-yoga-programs/easy-yoga-solutions/isha-kriya-2/">Isha Kriya</a></li>
+<li class="page_item page-item-14983"><a href="http://isha.sadhguru.org/offerings-celebrations/business/isha-life/">Isha Life</a></li>
+<li class="page_item page-item-52668"><a href="http://isha.sadhguru.org/isha-life/">Isha Life &#8211; Health Solutions &#8211; Allopathy|Ayurveda|Siddha|Yoga</a></li>
+<li class="page_item page-item-52552"><a href="http://isha.sadhguru.org/isha-life-contact-us/">Isha Life Contact Us</a></li>
+<li class="page_item page-item-53255"><a href="http://isha.sadhguru.org/live-session-isha/">Isha Live Session</a></li>
+<li class="page_item page-item-51631"><a href="http://isha.sadhguru.org/ishanewsletter/subscription-confirmed/">Isha Newsletter Subscription Confirmed!</a></li>
+<li class="page_item page-item-14201"><a href="http://isha.sadhguru.org/offerings-celebrations/health/isha-rejuvenation/">Isha Rejuvenation</a></li>
+<li class="page_item page-item-15000"><a href="http://isha.sadhguru.org/offerings-celebrations/education/isha-samskriti/">Isha Samskriti</a></li>
+<li class="page_item page-item-16604"><a href="http://isha.sadhguru.org/offerings-celebrations/business/isha-shoppe/">Isha shoppe</a></li>
+<li class="page_item page-item-14977"><a href="http://isha.sadhguru.org/social-outreach/isha-vidhya/">Isha Vidhya</a></li>
+<li class="page_item page-item-14996"><a href="http://isha.sadhguru.org/isha-global-centers/isha-yoga-center/">Isha Yoga Center</a></li>
+<li class="page_item page-item-54003"><a href="http://isha.sadhguru.org/chennai/">Isha Yoga Program in Chennai</a></li>
+<li class="page_item page-item-51946"><a href="http://isha.sadhguru.org/isha-yoga-with-sadhguru-thankyou/">Isha yoga with Sadhguru &#8211; Thank you</a></li>
+<li class="page_item page-item-51608"><a href="http://isha.sadhguru.org/isha-yoga-with-sadhguru/">Isha Yoga with Sadhguru (In Tamil) Coming December 17-18, 2016</a></li>
+<li class="page_item page-item-51688"><a href="http://isha.sadhguru.org/isha-yoga-with-sadhguru-tamil/">Isha Yoga with Sadhguru (In Tamil) Coming December 17-18, 2016</a></li>
+<li class="page_item page-item-52880"><a href="http://isha.sadhguru.org/isha-yoga-with-sadhguru-pc/">Isha Yoga with Sadhguru (In Tamil) Paid Campaign</a></li>
+<li class="page_item page-item-15002"><a href="http://isha.sadhguru.org/offerings-celebrations/business/ishana/">Ishana</a></li>
+<li class="page_item page-item-22338"><a href="http://isha.sadhguru.org/publications/joy-27x7-kannada/">Joy 24&#215;7</a></li>
+<li class="page_item page-item-53773"><a href="http://isha.sadhguru.org/kailash-teerth/">Kailash Teerth</a></li>
+<li class="page_item page-item-55371"><a href="http://isha.sadhguru.org/mumbai-event/">Karan Johar in Conversation with Sadhguru</a></li>
+<li class="page_item page-item-22934"><a href="http://isha.sadhguru.org/africa/kenya/">Kenya</a></li>
+<li class="page_item page-item-54209 page_item_has_children"><a href="http://isha.sadhguru.org/dev-bangalore/">Kiran Mazumdar-Shaw in Conversation with Sadhguru</a></li>
+<li class="page_item page-item-16867"><a href="http://isha.sadhguru.org/yoga-classes/kualalumpur/">Kuala Lumpur Events</a></li>
+<li class="page_item page-item-23647"><a href="http://isha.sadhguru.org/lapofthemaster/">Lap of the Master</a></li>
+<li class="page_item page-item-14955"><a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/linga-bhairavi/">Linga Bhairavi</a></li>
+<li class="page_item page-item-53262"><a href="http://isha.sadhguru.org/sg-isha-live-session/">Live Session from Isha</a></li>
+<li class="page_item page-item-23737"><a href="http://isha.sadhguru.org/sadhguru-in-united-nations-2016/live-webstream-200616/">Live Webstream</a></li>
+<li class="page_item page-item-14441"><a href="http://isha.sadhguru.org/events/locations/">Locations</a></li>
+<li class="page_item page-item-16836"><a href="http://isha.sadhguru.org/yoga-classes/london/">London Events</a></li>
+<li class="page_item page-item-15076"><a href="http://isha.sadhguru.org/offerings-celebrations/special-events/mahashivaratri/">Mahashivratri</a></li>
+<li class="page_item page-item-4465"><a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/mahima/">Mahima Meditation Hall</a></li>
+<li class="page_item page-item-18284"><a href="http://isha.sadhguru.org/yoga-classes/malaysia/">Malaysia Events</a></li>
+<li class="page_item page-item-53685"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/malli-accomodation/">Malli Accomodation</a></li>
+<li class="page_item page-item-53830"><a href="http://isha.sadhguru.org/dubai/">Meet Mingle Meditate with Sadhguru in Dubai</a></li>
+<li class="page_item page-item-53316"><a href="http://isha.sadhguru.org/sadhguru-in-malaysia/">Meet, Mingle, &#038; Meditate with Sadhguru In Malaysia</a></li>
+<li class="page_item page-item-53283"><a href="http://isha.sadhguru.org/sadhguru-in-singapore/">Meet, Mingle, &#038; Meditate with Sadhguru In Singapore</a></li>
+<li class="page_item page-item-16852"><a href="http://isha.sadhguru.org/yoga-classes/melbourne/">Melbourne Events</a></li>
+<li class="page_item page-item-22480"><a href="http://isha.sadhguru.org/publications/mind-is-your-business/">Mind is Your Business</a></li>
+<li class="page_item page-item-56117"><a href="http://isha.sadhguru.org/mobile-app-sadhguru/">Mobile App Sadhguru</a></li>
+<li class="page_item page-item-55438"><a href="http://isha.sadhguru.org/mumbai/enquire-failure/">Mumbai Enquire Failure</a></li>
+<li class="page_item page-item-55437"><a href="http://isha.sadhguru.org/mumbai/enquire-success/">Mumbai Enquire Success</a></li>
+<li class="page_item page-item-16633"><a href="http://isha.sadhguru.org/yoga-classes/mumbai/">Mumbai events</a></li>
+<li class="page_item page-item-53198"><a href="http://isha.sadhguru.org/mumbai-sathsang-thank-you/">Mumbai Sathsang Thank You</a></li>
+<li class="page_item page-item-16849"><a href="http://isha.sadhguru.org/yoga-classes/munich/">Munich Events</a></li>
+<li class="page_item page-item-14444"><a href="http://isha.sadhguru.org/events/my-bookings/">My Bookings</a></li>
+<li class="page_item page-item-56395"><a href="http://isha.sadhguru.org/mystic-eye-enquire-failure/">Mystic Eye Enquire Failure</a></li>
+<li class="page_item page-item-56396"><a href="http://isha.sadhguru.org/mystic-eye-enquire-success/">Mystic Eye Enquire Success</a></li>
+<li class="page_item page-item-56399"><a href="http://isha.sadhguru.org/mystic-eye-payment-failure/">Mystic Eye Payment  Failure</a></li>
+<li class="page_item page-item-56413"><a href="http://isha.sadhguru.org/mystic-eye-payment-success/">Mystic Eye Payment Success</a></li>
+<li class="page_item page-item-56483"><a href="http://isha.sadhguru.org/mystic-eye-registration-failure/">Mystic Eye Registration Failure</a></li>
+<li class="page_item page-item-56484"><a href="http://isha.sadhguru.org/mystic-eye-registration-success/">Mystic Eye Registration Success</a></li>
+<li class="page_item page-item-52008"><a href="http://isha.sadhguru.org/sadhguru-in-mumbai-thankyou/">Mystic Eye with Sadhguru &#8211; Thank you</a></li>
+<li class="page_item page-item-56038"><a href="http://isha.sadhguru.org/chennai-event/">Mystic Eye with Sadhguru in Chennai</a></li>
+<li class="page_item page-item-10913"><a href="http://isha.sadhguru.org/quotes/english-archive/">Mystic Quotes &#8211; Sadhguru (English Archive)</a></li>
+<li class="page_item page-item-16839"><a href="http://isha.sadhguru.org/yoga-classes/netherlands/">Netherlands Events</a></li>
+<li class="page_item page-item-56675"><a href="http://isha.sadhguru.org/new-version-guru-purnima/">New Version Guru Purnima</a></li>
+<li class="page_item page-item-53536"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/order-bedding/">Order Bedding</a></li>
+<li class="page_item page-item-53673"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/packing-guidelines/">Packing Guidelines</a></li>
+<li class="page_item page-item-4709"><a href="http://isha.sadhguru.org/mission/global-harmony/peace-summit/millennium-world-peace-summit/">Peace Summit</a></li>
+<li class="page_item page-item-16858"><a href="http://isha.sadhguru.org/yoga-classes/perth/">Perth Events</a></li>
+<li class="page_item page-item-55124"><a href="http://isha.sadhguru.org/quotes/please-retry/">Please Retry</a></li>
+<li class="page_item page-item-21474"><a href="http://isha.sadhguru.org/mission/global-harmony/peace-summit/poverty-and-the-need-for-action/">Poverty and Need for Action</a></li>
+<li class="page_item page-item-23748"><a href="http://isha.sadhguru.org/international-day-yoga/practice">practice</a></li>
+<li class="page_item page-item-4395"><a href="http://isha.sadhguru.org/social-outreach/project-greenhands/">Project GreenHands</a></li>
+<li class="page_item page-item-16669"><a href="http://isha.sadhguru.org/yoga-classes/pune/">Pune Events</a></li>
+<li class="page_item page-item-56225 page_item_has_children"><a href="http://isha.sadhguru.org/rally-for-rivers/">Rally for Rivers</a></li>
+<li class="page_item page-item-57290"><a href="http://isha.sadhguru.org/rally-for-rivers/contest/creative-art/">Rally for Rivers Art Contest</a></li>
+<li class="page_item page-item-53584"><a href="http://isha.sadhguru.org/razorpay-experimentation/">Razorpay Experimentation</a></li>
+<li class="page_item page-item-4456"><a href="http://isha.sadhguru.org/isha-yoga-programs/special-programs/sacred-walks/">Sacred Walks</a></li>
+<li class="page_item page-item-53543"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/sadhana/">Sadhana</a></li>
+<li class="page_item page-item-53527"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/sadhana-clarifications/">Sadhana Clarifications</a></li>
+<li class="page_item page-item-53564"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/sadhana-dates/">Sadhana Dates</a></li>
+<li class="page_item page-item-53231"><a href="http://isha.sadhguru.org/sadhana-stay-isha-institute-usa/">Sadhana Stay at Isha Institute in USA</a></li>
+<li class="page_item page-item-22299"><a href="http://isha.sadhguru.org/publications/sadhguru-more-than-life/">Sadhguru &#8211; More Than A Life</a></li>
+<li class="page_item page-item-23750"><a href="http://isha.sadhguru.org/unstream">Sadhguru at UN Live Webstream &#8211; June 20th 2016</a></li>
+<li class="page_item page-item-54956"><a href="http://isha.sadhguru.org/bangalore/">Sadhguru in Bangalore</a></li>
+<li class="page_item page-item-22588"><a href="http://isha.sadhguru.org/sadhguru-in-berlin/">Sadhguru in Berlin</a></li>
+<li class="page_item page-item-51615"><a href="http://isha.sadhguru.org/sadhguru-in-london/">Sadhguru in London</a></li>
+<li class="page_item page-item-24008"><a href="http://isha.sadhguru.org/mysore/">Sadhguru in Mysore</a></li>
+<li class="page_item page-item-24199"><a href="http://isha.sadhguru.org/sadhguru-in-mysore-thank-you/">Sadhguru In Mysore &#8211; Registration Confirmed</a></li>
+<li class="page_item page-item-23721 page_item_has_children"><a href="http://isha.sadhguru.org/sadhguru-in-united-nations-2016/">Sadhguru In United Nations 2016</a></li>
+<li class="page_item page-item-23728"><a href="http://isha.sadhguru.org/sadhguru-in-united-nations-2016/">Sadhguru In United Nations 2016</a></li>
+<li class="page_item page-item-50833"><a href="http://isha.sadhguru.org/booktour/">Sadhguru Jaggi Vasudev &#8211; The Founder of Isha Foundation</a></li>
+<li class="page_item page-item-24987 current_page_item"><a href="http://isha.sadhguru.org/">Sadhguru Jaggi Vasudev &#8211; The Founder of Isha Foundation</a></li>
+<li class="page_item page-item-54920"><a href="http://isha.sadhguru.org/sadhguru-receives-padma-vibhushan/">Sadhguru Receives Padma Vibhushan</a></li>
+<li class="page_item page-item-51627"><a href="http://isha.sadhguru.org/sadhguruspot/subscription-confirmed/">Sadhguru Spot Subscription Confirmed!</a></li>
+<li class="page_item page-item-56960"><a href="http://isha.sadhguru.org/sample-damaru/">sample damaru</a></li>
+<li class="page_item page-item-56392"><a href="http://isha.sadhguru.org/sample-chennai-event/">Sample Mystic Eye with Sadhguru in Chennai</a></li>
+<li class="page_item page-item-24387"><a href="http://isha.sadhguru.org/sample-page/">sample page</a></li>
+<li class="page_item page-item-15051"><a href="http://isha.sadhguru.org/isha-yoga-programs/advanced-yoga/samyama/">Samyama</a></li>
+<li class="page_item page-item-16829"><a href="http://isha.sadhguru.org/yoga-classes/sanfrancisco/">San Francisco Events</a></li>
+<li class="page_item page-item-52272"><a href="http://isha.sadhguru.org/shiva-newsletter-subscription-confirmed/">Shiva Newsletter Subscription Confirmed!</a></li>
+<li class="page_item page-item-15107"><a href="http://isha.sadhguru.org/offerings-celebrations/special-events/shivanga-sadhana/">Shivanga Sadhana</a></li>
+<li class="page_item page-item-15059"><a href="http://isha.sadhguru.org/isha-yoga-programs/advanced-yoga/shoonya-intensive/">Shoonya Intensive</a></li>
+<li class="page_item page-item-16870"><a href="http://isha.sadhguru.org/yoga-classes/singapore/">Singapore Events</a></li>
+<li class="page_item page-item-15136"><a href="http://isha.sadhguru.org/offerings-celebrations/sound-of-isha/">Sound Of Isha</a></li>
+<li class="page_item page-item-22943"><a href="http://isha.sadhguru.org/africa/south-africa/">South Africa</a></li>
+<li class="page_item page-item-15137"><a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/spanda-hall/">Spanda Hall</a></li>
+<li class="page_item page-item-17008 page_item_has_children"><a href="http://isha.sadhguru.org/offerings-celebrations/special-events/">Special Events</a></li>
+<li class="page_item page-item-16974 page_item_has_children"><a href="http://isha.sadhguru.org/isha-yoga-programs/special-programs/">Special Programs</a></li>
+<li class="page_item page-item-11514"><a href="http://isha.sadhguru.org/quotes/subscription-confirmed/">Subscription Confirmed!</a></li>
+<li class="page_item page-item-16855"><a href="http://isha.sadhguru.org/yoga-classes/sydney/">Sydney Events</a></li>
+<li class="page_item page-item-15066"><a href="http://isha.sadhguru.org/isha-yoga-programs/special-programs/teachers-training/">Teacher&#8217;s Training</a></li>
+<li class="page_item page-item-24737"><a href="http://isha.sadhguru.org/publications/telugu/">telugu</a></li>
+<li class="page_item page-item-56948"><a href="http://isha.sadhguru.org/test-download/">Test Download</a></li>
+<li class="page_item page-item-52494"><a href="http://isha.sadhguru.org/mumbai-2017-thank-you/">Thank you</a></li>
+<li class="page_item page-item-56685"><a href="http://isha.sadhguru.org/guru-purnima/thank-you/">Thank you</a></li>
+<li class="page_item page-item-23732"><a href="http://isha.sadhguru.org/sadhguru-in-united-nations-2016/thank-you/">Thank You</a></li>
+<li class="page_item page-item-54256"><a href="http://isha.sadhguru.org/bangalore/thank-you/">Thank you</a></li>
+<li class="page_item page-item-20034"><a href="http://isha.sadhguru.org/gramotsavam/the-people/">The People</a></li>
+<li class="page_item page-item-15077"><a href="http://isha.sadhguru.org/isha-global-centers/consecrated-spaces/theerthakunds-sacred-water-bodies/">Theerthakunds Sacred Water Bodies</a></li>
+<li class="page_item page-item-22331"><a href="http://isha.sadhguru.org/publications/three-truths-of-well-being/">Three Truths of Well Being</a></li>
+<li class="page_item page-item-22333"><a href="http://isha.sadhguru.org/publications/three-truths-of-well-being-hindi/">Three Truths of Well-Being Hindi</a></li>
+<li class="page_item page-item-16876"><a href="http://isha.sadhguru.org/yoga-classes/toronto/">Toronto</a></li>
+<li class="page_item page-item-51420"><a href="http://isha.sadhguru.org/sam-triveni/">Triveni &#8211; From Sadhguru and Sounds of Isha</a></li>
+<li class="page_item page-item-51442"><a href="http://isha.sadhguru.org/triveni/">Triveni &#8211; From Sadhguru and Sounds of Isha</a></li>
+<li class="page_item page-item-22805"><a href="http://isha.sadhguru.org/africa/uganda/">Uganda</a></li>
+<li class="page_item page-item-16873"><a href="http://isha.sadhguru.org/yoga-classes/uganda/">Uganda Events</a></li>
+<li class="page_item page-item-23141"><a href="http://isha.sadhguru.org/africa/uganda/inner-engineering-thank-you/">Uganda Inner Engineering June 2016 Thank You</a></li>
+<li class="page_item page-item-55153"><a href="http://isha.sadhguru.org/uk-eu-inner-engineering/">UK EU Inner Engineering</a></li>
+<li class="page_item page-item-23754"><a href="http://isha.sadhguru.org/unstream/">UN Stream</a></li>
+<li class="page_item page-item-23809"><a href="http://isha.sadhguru.org/unstream-youtube/">UN Stream Youtube</a></li>
+<li class="page_item page-item-5762"><a href="http://isha.sadhguru.org/mission/global-harmony/universality-of-religions/interfaith-meet-14th-dhyanalinga-consecration-anniversary/">Universality of  Religions</a></li>
+<li class="page_item page-item-18293"><a href="http://isha.sadhguru.org/yoga-classes/usa/">USA &#038; Canada Events</a></li>
+<li class="page_item page-item-53880"><a href="http://isha.sadhguru.org/daily-kailash-darshan/">View of Mt. Kailash July 25 &#8211; 07:10AM</a></li>
+<li class="page_item page-item-16832"><a href="http://isha.sadhguru.org/yoga-classes/washingtondc/">Washington DC Events</a></li>
+<li class="page_item page-item-8348"><a href="http://isha.sadhguru.org/mission/global-harmony/world-peace-day-2013/">World Peace Day</a></li>
+<li class="page_item page-item-4557"><a href="http://isha.sadhguru.org/offerings-celebrations/special-events/yaksha/">Yaksha</a></li>
+<li class="page_item page-item-55966"><a href="http://isha.sadhguru.org/yogaclasses-bangalore/">Yoga and Meditation Program with Sadhguru in Bangalore</a></li>
+<li class="page_item page-item-55968"><a href="http://isha.sadhguru.org/yoga-classes-bangalore/">yoga classes bangalore</a></li>
+<li class="page_item page-item-53652"><a href="http://isha.sadhguru.org/ishafreeofferinguk/">Yoga for Health</a></li>
+<li class="page_item page-item-53551"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/yoga-veera/">Yoga Veera</a></li>
+<li class="page_item page-item-53324"><a href="http://isha.sadhguru.org/yogaveera/">Yoga Veera</a></li>
+<li class="page_item page-item-53470"><a href="http://isha.sadhguru.org/yogaveera-thankyou/">Yoga Veera Thankyou</a></li>
+<li class="page_item page-item-52366 page_item_has_children"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/">Yogeshwar Linga Consecration </a></li>
+<li class="page_item page-item-52471"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration-thank-you/">Yogeshwar Linga Consecration &#8211; Thank You</a></li>
+<li class="page_item page-item-53521"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration/faq/">Yogeshwar Linga Consecration FAQ</a></li>
+<li class="page_item page-item-53494"><a href="http://isha.sadhguru.org/yogeshwar-linga-consecration-sample/">Yogeshwar Linga Consecration sample</a></li>
+<li class="page_item page-item-24205"><a href="http://isha.sadhguru.org/tamilgurupurnima/">குரு பௌர்ணமி</a></li>
+<li class="page_item page-item-21585"><a href="http://isha.sadhguru.org/mission/outreach/health-initiatives/action-for-rural-rejuvenation/">Action for Rural Rejuvenation</a></li>
+<li class="page_item page-item-21570"><a href="http://isha.sadhguru.org/mission/isha-yoga/vaibhav-shiva/adi-yogi/">Adi Yogi</a></li>
+<li class="page_item page-item-21708"><a href="http://isha.sadhguru.org/mystic/enlightenment/an-inside-story/">Enlightenment an Inside Story</a></li>
+<li class="page_item page-item-5910"><a href="http://isha.sadhguru.org/mission/reviving-tradition/hands-of-grace/">Hands of Grace</a></li>
+<li class="page_item page-item-4752"><a href="http://isha.sadhguru.org/mission/outreach/health-initiatives/oneness-and-wholeness/">Health Initiatives</a></li>
+<li class="page_item page-item-21587"><a href="http://isha.sadhguru.org/mission/outreach/health-initiatives/isha-arogya/">Isha Arogya</a></li>
+<li class="page_item page-item-4791"><a href="http://isha.sadhguru.org/mission/isha-foundation/">Isha Foundation</a></li>
+<li class="page_item page-item-21517"><a href="http://isha.sadhguru.org/mission/isha-foundation/isha-institute-inner-sciences/">Isha Institute Inner Sciences</a></li>
+<li class="page_item page-item-21589"><a href="http://isha.sadhguru.org/mission/outreach/health-initiatives/isha-rejuvenation/">Isha Rejuvenation</a></li>
+<li class="page_item page-item-4968"><a href="http://isha.sadhguru.org/mission/educational-initiatives/isha-vidhya/">Isha Vidhya</a></li>
+<li class="page_item page-item-21449"><a href="http://isha.sadhguru.org/mission/educational-initiatives/isha-vidhya/isha-vidhya-a-volunteers-story/">Isha Vidhya A Volunteers Story</a></li>
+<li class="page_item page-item-21447"><a href="http://isha.sadhguru.org/mission/educational-initiatives/isha-vidhya/rekindling-the-spark/">Isha Vidhya Rekindling the Spark</a></li>
+<li class="page_item page-item-21513"><a href="http://isha.sadhguru.org/mission/isha-foundation/isha-yoga-center/">Isha Yoga Center</a></li>
+<li class="page_item page-item-21664"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/meditation-halls/mahima-seat-of-grace/">Mahima – Seat of Grace</a></li>
+<li class="page_item page-item-6511"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/meditation-halls/">Meditation Halls</a></li>
+<li class="page_item page-item-5847"><a href="http://isha.sadhguru.org/man/mountain-mystic/">Mountain Mystic</a></li>
+<li class="page_item page-item-21591"><a href="http://isha.sadhguru.org/mission/outreach/health-initiatives/official-sites/">Official Site</a></li>
+<li class="page_item page-item-4357"><a href="http://isha.sadhguru.org/mystic/enlightenment/sadhgurus-enlightenment/">Sadhguru’s Enlightenment</a></li>
+<li class="page_item page-item-21515"><a href="http://isha.sadhguru.org/mission/isha-foundation/the-birth-of-isha-yoga-center/">The Birth of Isha Yoga Center</a></li>
+<li class="page_item page-item-21519"><a href="http://isha.sadhguru.org/mission/isha-foundation/the-california-isha-center-takes-root/">The California Isha Center Takes Root</a></li>
+<li class="page_item page-item-21568"><a href="http://isha.sadhguru.org/mission/isha-yoga/vaibhav-shiva/three-ways-of-shiva/">Three Ways of Shiva</a></li>
+<li class="page_item page-item-4926"><a href="http://isha.sadhguru.org/mission/isha-yoga/vaibhav-shiva/">Vaibhav Shiva</a></li>
+<li class="page_item page-item-21706"><a href="http://isha.sadhguru.org/mystic/enlightenment/">What is Enlightenment?</a></li>
+<li class="page_item page-item-23677"><a href="http://isha.sadhguru.org/yoga-tools-app/">Yoga Tools App</a></li>
+<li class="page_item page-item-4849"><a href="http://isha.sadhguru.org/mission/outreach/action-for-rural-rejuvenation/">Action for Rural Rejuvenation</a></li>
+<li class="page_item page-item-15416"><a href="http://isha.sadhguru.org/activities/">Activities</a></li>
+<li class="page_item page-item-21551"><a href="http://isha.sadhguru.org/mission/isha-yoga/leela/blue/">Blue</a></li>
+<li class="page_item page-item-6393"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/consecration-process/triangular-form/">Consecration Process</a></li>
+<li class="page_item page-item-5660"><a href="http://isha.sadhguru.org/mission/accessible-to-all/corporations-leadership-in-business/">Corporations</a></li>
+<li class="page_item page-item-5090"><a href="http://isha.sadhguru.org/man/game-for-life/">Game for Life</a></li>
+<li class="page_item page-item-21690"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/consecration-process/glimpses-of-beyond/">Glimpses of the Beyond</a></li>
+<li class="page_item page-item-21575"><a href="http://isha.sadhguru.org/mission/outreach/action-for-rural-rejuvenation/isha-gramotsavam/">Isha Gramotsavam</a></li>
+<li class="page_item page-item-4965"><a href="http://isha.sadhguru.org/mission/educational-initiatives/isha-home-school/">Isha Home School</a></li>
+<li class="page_item page-item-21435"><a href="http://isha.sadhguru.org/mission/educational-initiatives/isha-home-school-video/">Isha Home School Video</a></li>
+<li class="page_item page-item-4901 page_item_has_children"><a href="http://isha.sadhguru.org/mission/isha-yoga/inner-engineering/">Isha Yoga</a></li>
+<li class="page_item page-item-21685"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/consecration-process/karma-yatra/">Karma Yatra</a></li>
+<li class="page_item page-item-4903"><a href="http://isha.sadhguru.org/mission/isha-yoga/leela/the-path-of-the-playful/">Leela</a></li>
+<li class="page_item page-item-4546"><a href="http://isha.sadhguru.org/mystic/three-lifetimes/bilva/">Lifetimes Three</a></li>
+<li class="page_item page-item-21604"><a href="http://isha.sadhguru.org/mission/reviving-tradition/mahashivarathri/live-webstream/">Mahashivaratri Live Webstream 2017</a></li>
+<li class="page_item page-item-21529"><a href="http://isha.sadhguru.org/mission/isha-yoga/my-inner-engineering-experience/">My Inner Engineering Experience</a></li>
+<li class="page_item page-item-21600"><a href="http://isha.sadhguru.org/mission/reviving-tradition/mahashivarathri/of-shiva-and-me/">Of Shiva and Me</a></li>
+<li class="page_item page-item-21531"><a href="http://isha.sadhguru.org/mission/isha-yoga/other-programs/">Other Programs</a></li>
+<li class="page_item page-item-21784"><a href="http://isha.sadhguru.org/mystic/three-lifetimes/sadhguru/">Sadhguru</a></li>
+<li class="page_item page-item-21782"><a href="http://isha.sadhguru.org/mystic/three-+lifetimes/sadhguru-shree-brahma/">Sadhguru Shri Brahma</a></li>
+<li class="page_item page-item-21797"><a href="http://isha.sadhguru.org/mystic/three-lifetimes/sadhguru-shri-brahma/">Sadhguru Shri Brahma</a></li>
+<li class="page_item page-item-21596"><a href="http://isha.sadhguru.org/mission/reviving-tradition/mahashivarathri/shiva-outlaw-ebook/">Shiva Outlaw Ebook</a></li>
+<li class="page_item page-item-21598"><a href="http://isha.sadhguru.org/mission/reviving-tradition/mahashivarathri/shiva-shiva-chants/">Shiva Shiva Chants</a></li>
+<li class="page_item page-item-21780"><a href="http://isha.sadhguru.org/mystic/three-lifetimes/shivayogi/">Shivayogi</a></li>
+<li class="page_item page-item-21671"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/theerthakunds-sacred-water-bodies/suryakund-consecration-video/">Suryakund Consecration</a></li>
+<li class="page_item page-item-21669"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/theerthakunds-sacred-water-bodies/temples-of-flesh-bone/">Temples of Flesh and Bone</a></li>
+<li class="page_item page-item-4881"><a href="http://isha.sadhguru.org/mission/reviving-tradition/significance-of-mahashivarathri/">The Significance of Mahashivratri</a></li>
+<li class="page_item page-item-21577"><a href="http://isha.sadhguru.org/mission/outreach/action-for-rural-rejuvenation/tsunami-relief-and-rehabilitation/">Tsunami Relief &#038; Rehabilitation</a></li>
+<li class="page_item page-item-21580"><a href="http://isha.sadhguru.org/mission/outreach/action-for-rural-rejuvenation/tsunami-response/">Tsunami Response</a></li>
+<li class="page_item page-item-21553"><a href="http://isha.sadhguru.org/mission/isha-yoga/leela/walking-krishnas-path/">Walking Krishna’s Path</a></li>
+<li class="page_item page-item-6517"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/theerthakunds-sacred-water-bodies/">Water has Memory</a></li>
+<li class="page_item page-item-21687"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/consecration-process/when-the-divine-descends/">When the Divine Descends</a></li>
+<li class="page_item page-item-21788"><a href="http://isha.sadhguru.org/mystic/three-lifetimes/yoga/">Yoga</a></li>
+<li class="page_item page-item-21500"><a href="http://isha.sadhguru.org/mission/guided-meditation/meditate-with-eyes-open/">Can You Meditate with your eyes open?</a></li>
+<li class="page_item page-item-21609"><a href="http://isha.sadhguru.org/mission/reviving-tradition/navaratri/devi-patron-of-arts/">Devi Patron of Arts</a></li>
+<li class="page_item page-item-5999"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/dhyanalinga-architecture/fusion-of-shapes/">Dhyanalinga Architecture</a></li>
+<li class="page_item page-item-21699"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/dhyanalinga-architecture/dhyanalinga-dome/">Dhyanalinga Dome</a></li>
+<li class="page_item page-item-5632"><a href="http://isha.sadhguru.org/mission/accessible-to-all/global-forums/world-economic-forum/">Global Forums</a></li>
+<li class="page_item page-item-21493"><a href="http://isha.sadhguru.org/mission/guided-meditation/">Guided Meditation</a></li>
+<li class="page_item page-item-21495"><a href="http://isha.sadhguru.org/mission/guided-meditation/">Guided Meditation</a></li>
+<li class="page_item page-item-21612"><a href="http://isha.sadhguru.org/mission/reviving-tradition/navaratri/hands-of-grace-handicrafts-exposition/">Hands of Grace Handicrafts Exposition</a></li>
+<li class="page_item page-item-21563"><a href="http://isha.sadhguru.org/mission/isha-yoga/mahabharat/karna/">Karna</a></li>
+<li class="page_item page-item-4922"><a href="http://isha.sadhguru.org/mission/isha-yoga/mahabharat/even-krishna-is-not-free/">Mahabharat</a></li>
+<li class="page_item page-item-5105"><a href="http://isha.sadhguru.org/man/man-and-machine/">Man and Machine</a></li>
+<li class="page_item page-item-21617"><a href="http://isha.sadhguru.org/mission/reviving-tradition/yaksha/music-and-spirituality/">Music and Spirituality</a></li>
+<li class="page_item page-item-11356"><a href="http://isha.sadhguru.org/mission/reviving-tradition/navaratri/celebrations-at-linga-bhairavi/">Navaratri</a></li>
+<li class="page_item page-item-4735"><a href="http://isha.sadhguru.org/mission/guided-meditation/nobody-can-do-meditation/">Nobody Can Do Meditation !</a></li>
+<li class="page_item page-item-21561"><a href="http://isha.sadhguru.org/mission/isha-yoga/mahabharat/panchali/">Panchali</a></li>
+<li class="page_item page-item-21695"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/dhyanalinga-architecture/patanjali-vanashree/">Patanjali and Vanashree</a></li>
+<li class="page_item page-item-21502"><a href="http://isha.sadhguru.org/mission/guided-meditation/power-to-create/">Power to Create</a></li>
+<li class="page_item page-item-21853"><a href="http://isha.sadhguru.org/man/man-and-machine/sadhguru-flies-helicopter/">Sadhguru flies Helicopter</a></li>
+<li class="page_item page-item-21558"><a href="http://isha.sadhguru.org/mission/isha-yoga/mahabharat/saga-nonpareil-an-immersive-experience/">Saga Nonpareil: An Immersive Experience</a></li>
+<li class="page_item page-item-4962"><a href="http://isha.sadhguru.org/mission/educational-initiatives/isha-samskriti/">Samskriti</a></li>
+<li class="page_item page-item-21697"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/dhyanalinga-architecture/six-panels/">Six Panels</a></li>
+<li class="page_item page-item-21800"><a href="http://isha.sadhguru.org/mystic/velliangiri/kailash-of-south/">The Kailash of the South</a></li>
+<li class="page_item page-item-21701"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/dhyanalinga-architecture/sanctum-sanctorum/">The Sanctum Sanctorum</a></li>
+<li class="page_item page-item-21802"><a href="http://isha.sadhguru.org/mystic/velliangiri/">Velliangiri</a></li>
+<li class="page_item page-item-4384"><a href="http://isha.sadhguru.org/mystic/velliangiri/kailash-of-south-video/">Velliangiri Mountains the Kailash of the South</a></li>
+<li class="page_item page-item-4890"><a href="http://isha.sadhguru.org/mission/reviving-tradition/yaksha/">Yaksha</a></li>
+<li class="page_item page-item-21546"><a href="http://isha.sadhguru.org/mission/isha-yoga/isha-hata-yoga-school/21-day-hatha-yoga-program/">21-day Hatha Yoga Program</a></li>
+<li class="page_item page-item-21810"><a href="http://isha.sadhguru.org/mission/volunteering/a-historic-event/">A Historic Event</a></li>
+<li class="page_item page-item-5798"><a href="http://isha.sadhguru.org/mystic/adiyogi-alayam/">Adiyogi Alayam</a></li>
+<li class="page_item page-item-21628"><a href="http://isha.sadhguru.org/mystic/adiyogi-alayam/consecration-participant-sharings/">Adiyogi Alayam Consecration &#8211; Participants Sharing</a></li>
+<li class="page_item page-item-4943"><a href="http://isha.sadhguru.org/man/adventurer/">Adventurer</a></li>
+<li class="page_item page-item-21240"><a href="http://isha.sadhguru.org/man/adventurer/disappearing-act/">Adventurer</a></li>
+<li class="page_item page-item-21244"><a href="http://isha.sadhguru.org/man/adventurer/ashram-in-forest/">Adventurer</a></li>
+<li class="page_item page-item-21246"><a href="http://isha.sadhguru.org/man/adventurer/adventure-and-spirituality/">Adventurer</a></li>
+<li class="page_item page-item-20665"><a href="http://isha.sadhguru.org/hyderabad/eveningwithmystic/">An Evening with the Mystic &#8211; Wisdom,  Meditation and Bliss</a></li>
+<li class="page_item page-item-21630"><a href="http://isha.sadhguru.org/mystic/adiyogi-alayam/dhyanalinga-adiyogi/">Dhyanalinga and Adiyogi</a></li>
+<li class="page_item page-item-5687"><a href="http://isha.sadhguru.org/mission/educational-initiatives/government-school-adoption-program/">Government School Adoption Program</a></li>
+<li class="page_item page-item-4769"><a href="http://isha.sadhguru.org/mission/isha-yoga/isha-hata-yoga-school/the-science-of-hatha-yoga/">Hatha Yoga &#038; the Science of Hatha Yoga &#8211; Sadhguru</a></li>
+<li class="page_item page-item-21539"><a href="http://isha.sadhguru.org/mission/isha-yoga/isha-hata-yoga-school/teacher-training/">Hatha Yoga Teacher Training</a></li>
+<li class="page_item page-item-21544"><a href="http://isha.sadhguru.org/mission/isha-yoga/isha-hata-yoga-school/teachers-experiences/">Hatha Yoga Teachers’ Experiences</a></li>
+<li class="page_item page-item-21632"><a href="http://isha.sadhguru.org/mystic/adiyogi-alayam/his-abode/">HIS ABODE – Adiyogi Alayam</a></li>
+<li class="page_item page-item-5647"><a href="http://isha.sadhguru.org/mission/accessible-to-all/large-scale-events/ananda-alai-a-wave-of-bliss/">Large-Scale Events</a></li>
+<li class="page_item page-item-21624"><a href="http://isha.sadhguru.org/mystic/adiyogi-alayam/sadhguru-drinks-venom-at-consecration">Sadhguru Drinks Venom at the Consecration</a></li>
+<li class="page_item page-item-5898"><a href="http://isha.sadhguru.org/mission/volunteering/">Volunteer</a></li>
+<li class="page_item page-item-5628 page_item_has_children"><a href="http://isha.sadhguru.org/mission/accessible-to-all/">Accessible to All</a></li>
+<li class="page_item page-item-20735"><a href="http://isha.sadhguru.org/visakhapatnam/eveningwithmystic/">An Evening with the Mystic &#8211; Wisdom,  Meditation and Bliss</a></li>
+<li class="page_item page-item-4407 page_item_has_children"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/what-is-dhyanalinga/">Dhyanalinga</a></li>
+<li class="page_item page-item-21676"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/">Dhyanalinga</a></li>
+<li class="page_item page-item-21678"><a href="http://isha.sadhguru.org/mystic/dhyanalinga/the-silent-revolution/">Dhyanalinga &#8211; The Silent Revolution</a></li>
+<li class="page_item page-item-5652"><a href="http://isha.sadhguru.org/mission/accessible-to-all/one-on-one/in-conversations-with-the-mystic/about-leaderships/">One on One</a></li>
+<li class="page_item page-item-21416"><a href="http://isha.sadhguru.org/mission/accessible-to-all/one-on-one/with-chris-rado">One on One</a></li>
+<li class="page_item page-item-21419"><a href="http://isha.sadhguru.org/mission/accessible-to-all/one-on-one/with-shekhar-kapur/">One on One</a></li>
+<li class="page_item page-item-21427"><a href="http://isha.sadhguru.org/mission/accessible-to-all/one-on-one/with-anupam-kher/">One on One</a></li>
+<li class="page_item page-item-21726"><a href="http://isha.sadhguru.org/mystic/guru/adi-guru/">Adi Guru</a></li>
+<li class="page_item page-item-20821"><a href="http://isha.sadhguru.org/yoga-programs/tirupati">An Evening with the Mystic &#8211; Wisdom,  Meditation and Bliss</a></li>
+<li class="page_item page-item-21264"><a href="http://isha.sadhguru.org/man/flair-2/">Flair</a></li>
+<li class="page_item page-item-21270"><a href="http://isha.sadhguru.org/man/flair/a-lean-machine/">Flair</a></li>
+<li class="page_item page-item-5085"><a href="http://isha.sadhguru.org/man/flair/">Flair</a></li>
+<li class="page_item page-item-4434"><a href="http://isha.sadhguru.org/mystic/guru/">Guru</a></li>
+<li class="page_item page-item-4704 page_item_has_children"><a href="http://isha.sadhguru.org/mission/sanatana-dharma-global-harmony/">Sanatana Dharma and Global Harmony</a></li>
+<li class="page_item page-item-21716"><a href="http://isha.sadhguru.org/mystic/guru/shekhar-kapur-with-sadhguru-video/">Shekhar Kapur with Sadhguru</a></li>
+<li class="page_item page-item-21721"><a href="http://isha.sadhguru.org/mystic/guru/meaning-of-sadhguru/">The Meaning of “Sadhguru”</a></li>
+<li class="page_item page-item-21723"><a href="http://isha.sadhguru.org/mystic/guru/origin-of-yoga/">The Origin of Yoga</a></li>
+<li class="page_item page-item-5644"><a href="http://isha.sadhguru.org/mission/accessible-to-all/universities/">Universities</a></li>
+<li class="page_item page-item-21658"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/ambition-to-vision/">Ambition to Vision</a></li>
+<li class="page_item page-item-5363"><a href="http://isha.sadhguru.org/man/globetrotter/baalbek-lebanon/">Baalbek, Lebanon</a></li>
+<li class="page_item page-item-14817"><a href="http://isha.sadhguru.org/bangalore-and-events/">Bangalore Events</a></li>
+<li class="page_item page-item-21279"><a href="http://isha.sadhguru.org/man/globetrotter/blue-nile/">Blue Nile</a></li>
+<li class="page_item page-item-21654"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/brahmananda-swarupa">Brahmananda Swarupa</a></li>
+<li class="page_item page-item-4494 page_item_has_children"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/sadhguru-speaks-about-mahima-video/">Consecrated Spaces</a></li>
+<li class="page_item page-item-21282"><a href="http://isha.sadhguru.org/man/globetrotter/delphi-greece/">Globetrotter: Sadhguru Around the World, Delphi , Greece</a></li>
+<li class="page_item page-item-21281"><a href="http://isha.sadhguru.org/man/globetrotter/manhattan/">Manhattan</a></li>
+<li class="page_item page-item-21656"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/mystic-chants-brahmananda-swarupa">Mystic Chants – Brahmananda Swarupa</a></li>
+<li class="page_item page-item-21650"><a href="http://isha.sadhguru.org/mystic/consecrated-spaces/prana-pratishtha/">Prana Pratishtha</a></li>
+<li class="page_item page-item-4879 page_item_has_children"><a href="http://isha.sadhguru.org/mission/reviving-tradition/">Reviving Tradition</a></li>
+<li class="page_item page-item-21757"><a href="http://isha.sadhguru.org/mystic/linga-bhairavi/bhairavi-shatakam/">Bhairavi Shatakam</a></li>
+<li class="page_item page-item-13283"><a href="http://isha.sadhguru.org/bharat-power-name/">Bharat &#8211; The Power of a Name</a></li>
+<li class="page_item page-item-21751"><a href="http://isha.sadhguru.org/mystic/linga-bhairavi/birth-goddess/">Birth of a Goddess</a></li>
+<li class="page_item page-item-21753"><a href="http://isha.sadhguru.org/mystic/linga-bhairavi/devi-is-a-living-entity/">Devi is a Living Entity</a></li>
+<li class="page_item page-item-21818"><a href="http://isha.sadhguru.org/man/poet/eternal-echoes/">Eternal Echoes</a></li>
+<li class="page_item page-item-4448"><a href="http://isha.sadhguru.org/mystic/linga-bhairavi/">Linga Bhairavi</a></li>
+<li class="page_item page-item-21749"><a href="http://isha.sadhguru.org/mystic/linga-bhairavi/consecration/">Linga Bhairavi Consecration</a></li>
+<li class="page_item page-item-21816"><a href="http://isha.sadhguru.org/man/poet/my-master/">My Master</a></li>
+<li class="page_item page-item-4842 page_item_has_children"><a href="http://isha.sadhguru.org/mission/outreach/isha-outreach/">Outreach</a></li>
+<li class="page_item page-item-5358"><a href="http://isha.sadhguru.org/man/poet/">Poet</a></li>
+<li class="page_item page-item-21755"><a href="http://isha.sadhguru.org/mystic/linga-bhairavi/red-colour-of-exuberence/">Red – The Colour of Exuberance</a></li>
+<li class="page_item page-item-5383"><a href="http://isha.sadhguru.org/man/author/">Author</a></li>
+<li class="page_item page-item-21027"><a href="http://isha.sadhguru.org/bharat-power-name-pc/">Bharat &#8211; The Power of a Name</a></li>
+<li class="page_item page-item-4619 page_item_has_children"><a href="http://isha.sadhguru.org/mission/educational-initiatives/the-purpose-of-education/">Educational Initiatives</a></li>
+<li class="page_item page-item-4496"><a href="http://isha.sadhguru.org/mystic/yantra/science-of-yantra/">How Do Yantras Work?</a></li>
+<li class="page_item page-item-21373"><a href="http://isha.sadhguru.org/mystic/yantra/linga-bhairavi-yantra-ceremony/">Linga Bhairavi Yantra Ceremony</a></li>
+<li class="page_item page-item-21379"><a href="http://isha.sadhguru.org/mystic/yantra/mystic-musings/">Mystic Musings</a></li>
+<li class="page_item page-item-21381"><a href="http://isha.sadhguru.org/mystic/yantra/mystic-musings-preview/">Mystic Musings Preview</a></li>
+<li class="page_item page-item-21357"><a href="http://isha.sadhguru.org/mystic/yantra/what-is-yantra/">What is Yantra ?</a></li>
+<li class="page_item page-item-21466"><a href="http://isha.sadhguru.org/mission/environmental-initiatives/a-tree-can-save-the-world/">A Tree Can Save The World</a></li>
+<li class="page_item page-item-14925"><a href="http://isha.sadhguru.org/bhava-spandana/">Bhava Spandana</a></li>
+<li class="page_item page-item-4549"><a href="http://isha.sadhguru.org/mission/environmental-initiatives/project-greenhands/">Environmental Initiatives</a></li>
+<li class="page_item page-item-21463"><a href="http://isha.sadhguru.org/mission/environmental-initiatives/guinness-record-pgh-report/">Guinness Record &#8211; PGH Report</a></li>
+<li class="page_item page-item-21731"><a href="http://isha.sadhguru.org/mystic/himalayas/himalayan-lust/">Himalayan Lust</a></li>
+<li class="page_item page-item-4232"><a href="http://isha.sadhguru.org/mystic/himalayas/">Himalayas</a></li>
+<li class="page_item page-item-21733"><a href="http://isha.sadhguru.org/mystic/himalayas/sacred-walks-video/">Himalayas Sacred Walks</a></li>
+<li class="page_item page-item-21458"><a href="http://isha.sadhguru.org/mission/environmental-initiatives/national-geographic-green-magazine/">National Geographic Green Magazine</a></li>
+<li class="page_item page-item-5130"><a href="http://isha.sadhguru.org/man/of-flora/trees-closest-relative/">Of Flora</a></li>
+<li class="page_item page-item-21878"><a href="http://isha.sadhguru.org/man/of-flora/">Of Flora</a></li>
+<li class="page_item page-item-21385"><a href="http://isha.sadhguru.org/man/of-flora/treetops/">Of Flora</a></li>
+<li class="page_item page-item-21461"><a href="http://isha.sadhguru.org/mission/environmental-initiatives/project-green-hands-music-video/">Project Green Hands Music Video</a></li>
+<li class="page_item page-item-21194"><a href="http://isha.sadhguru.org/man/fauna/godzilla-in-the-making/">And Fauna</a></li>
+<li class="page_item page-item-21207"><a href="http://isha.sadhguru.org/man/fauna/unexpected-invasion/">And Fauna</a></li>
+<li class="page_item page-item-5359"><a href="http://isha.sadhguru.org/man/fauna/breakfast-with-ants/">And Fauna</a></li>
+<li class="page_item page-item-10840"><a href="http://isha.sadhguru.org/business-of-business/">Business of Business</a></li>
+<li class="page_item page-item-4519"><a href="http://isha.sadhguru.org/mystic/anadhi/">Anaadhi</a></li>
+<li class="page_item page-item-21639"><a href="http://isha.sadhguru.org/mystic/anadhi/the-beginningless/">Anaadhi – The Beginningless</a></li>
+<li class="page_item page-item-21740"><a href="http://isha.sadhguru.org/mystic/mount-kailash/another-kind-of-life/">Another Kind of Life</a></li>
+<li class="page_item page-item-8216"><a href="http://isha.sadhguru.org/calender/">calender</a></li>
+<li class="page_item page-item-21744"><a href="http://isha.sadhguru.org/mystic/mount-kailash/journeyof-a-lifetime/">Journey of a Lifetime</a></li>
+<li class="page_item page-item-21738"><a href="http://isha.sadhguru.org/mystic/mount-kailash/kailash-manasarovar-video/">Kailash Manasarovar Sojourn</a></li>
+<li class="page_item page-item-4527"><a href="http://isha.sadhguru.org/mystic/mount-kailash/abode-of-shiva/">Mount Kailash and Manasarovar</a></li>
+<li class="page_item page-item-21637"><a href="http://isha.sadhguru.org/mystic/anadhi/of-mystics-and-mistakes/">Of Mystics and Mistakes</a></li>
+<li class="page_item page-item-21407"><a href="http://isha.sadhguru.org/man/snakes/sadhguru-handles-king-cobra/">Snakes</a></li>
+<li class="page_item page-item-5108"><a href="http://isha.sadhguru.org/man/snakes/">Snakes</a></li>
+<li class="page_item page-item-5860"><a href="http://isha.sadhguru.org/mission/sounds-of-isha/coordinated-cacophony/">Sounds of Isha</a></li>
+<li class="page_item page-item-21742"><a href="http://isha.sadhguru.org/mystic/mount-kailash/traveling-to-kailash-video/">Traveling to Kailash</a></li>
+<li class="page_item page-item-21063"><a href="http://isha.sadhguru.org/cancer-ebook/confirmation/">Cancer Ebook Download</a></li>
+<li class="page_item page-item-4980"><a href="http://isha.sadhguru.org/man/chef/">Chef</a></li>
+<li class="page_item page-item-4954"><a href="http://isha.sadhguru.org/man/architect/">Architect</a></li>
+<li class="page_item page-item-21041"><a href="http://isha.sadhguru.org/cancer-ebook/thankyou/">Cancer Ebook Thank You</a></li>
+<li class="page_item page-item-4829"><a href="http://isha.sadhguru.org/mission/isha-business/isha-craft/">Isha Craft</a></li>
+<li class="page_item page-item-21508"><a href="http://isha.sadhguru.org/mission/isha-business/isha-shoppe/">Isha Shoppe</a></li>
+<li class="page_item page-item-21766"><a href="http://isha.sadhguru.org/mystic/mantras/mahamantra/">Mahamantra</a></li>
+<li class="page_item page-item-4600"><a href="http://isha.sadhguru.org/mystic/mantras/">Mantras</a></li>
+<li class="page_item page-item-19136"><a href="http://isha.sadhguru.org/chandrajeevan/">Chandrajeevan &#8211; by Sounds of Isha</a></li>
+<li class="page_item page-item-5869"><a href="http://isha.sadhguru.org/man/inventive/">Inventive</a></li>
+<li class="page_item page-item-4318"><a href="http://isha.sadhguru.org/mystic/rasa-vaidya/">Rasa Vaidya</a></li>
+<li class="page_item page-item-14936"><a href="http://isha.sadhguru.org/contact-us/">Contact</a></li>
+<li class="page_item page-item-21259"><a href="http://isha.sadhguru.org/man/family-matters/devil-of-a-woman/">Family Matters &#8211; Sadhguru Speaks About His Family</a></li>
+<li class="page_item page-item-5848"><a href="http://isha.sadhguru.org/man/family-matters/vijji/">Family Matters &#8211; Sadhguru Speaks About His Family</a></li>
+<li class="page_item page-item-21775"><a href="http://isha.sadhguru.org/mystic/samyama/my-ride-of-a-lifetime/">My Ride of a Lifetime</a></li>
+<li class="page_item page-item-21773"><a href="http://isha.sadhguru.org/mystic/samyama/mystic-musings/">Mystic’s Musings</a></li>
+<li class="page_item page-item-4326"><a href="http://isha.sadhguru.org/mystic/samyama/meditate-with-open-eyes-video/">Samyama</a></li>
+<li class="page_item page-item-21771"><a href="http://isha.sadhguru.org/mystic/samyama/starkness-of-samyana/">The Starkness of Samyama</a></li>
+<li class="page_item page-item-4961"><a href="http://isha.sadhguru.org/man/attention-to-detail/">Attention to Detail</a></li>
+<li class="page_item page-item-20071"><a href="http://isha.sadhguru.org/guru-purnima/contribute/">Contribute</a></li>
+<li class="page_item page-item-4497"><a href="http://isha.sadhguru.org/mystic/wholeness/encounter-the-enlightened/">Encounter the Enlightened</a></li>
+<li class="page_item page-item-21217"><a href="http://isha.sadhguru.org/man/attention-to-detail/gesture-absolute-involvement/">Gesture and Absolute Involvement</a></li>
+<li class="page_item page-item-21228"><a href="http://isha.sadhguru.org/man/attention-to-detail/singer/">Singer</a></li>
+<li class="page_item page-item-21644"><a href="http://isha.sadhguru.org/mystic/wholeness/">Wholeness</a></li>
+<li class="page_item page-item-20078"><a href="http://isha.sadhguru.org/guru-purnima/contribute-pc/">Contribute</a></li>
+<li class="page_item page-item-18943"><a href="http://isha.sadhguru.org/topic-index/">Conversation Topics Index</a></li>
+<li class="page_item page-item-18990"><a href="http://isha.sadhguru.org/Conversation-mystic/">Conversation-mystic</a></li>
+<li class="page_item page-item-15409"><a href="http://isha.sadhguru.org/course-overview/">course overview</a></li>
+<li class="page_item page-item-14926"><a href="http://isha.sadhguru.org/courses-overview/">Courses</a></li>
+<li class="page_item page-item-16016"><a href="http://isha.sadhguru.org/customhome/">customhome</a></li>
+<li class="page_item page-item-14935"><a href="http://isha.sadhguru.org/donate/">Donate</a></li>
+<li class="page_item page-item-20074"><a href="http://isha.sadhguru.org/guru-purnima/downloads-thankyou/">Downloads Thankyou</a></li>
+<li class="page_item page-item-20080"><a href="http://isha.sadhguru.org/guru-purnima/downloads-thankyou-pc/">Downloads Thankyou</a></li>
+<li class="page_item page-item-14437"><a href="http://isha.sadhguru.org/event-register/">Event Register</a></li>
+<li class="page_item page-item-14440 page_item_has_children"><a href="http://isha.sadhguru.org/events/">Events</a></li>
+<li class="page_item page-item-16358"><a href="http://isha.sadhguru.org/facebook-feed/">facebook feed</a></li>
+<li class="page_item page-item-15396"><a href="http://isha.sadhguru.org/faq/">FAQ</a></li>
+<li class="page_item page-item-20036"><a href="http://isha.sadhguru.org/gramotsavam/live2015/">Gramotsavam Live 2015</a></li>
+<li class="page_item page-item-20035"><a href="http://isha.sadhguru.org/gramotsavam/thankyou/">Gramotsavam Thankyou</a></li>
+<li class="page_item page-item-22120"><a href="http://isha.sadhguru.org/Guidelines-for-Participants/">Guidelines for Participants</a></li>
+<li class="page_item page-item-20070 page_item_has_children"><a href="http://isha.sadhguru.org/guru-purnima/">Guru Purnima</a></li>
+<li class="page_item page-item-20077 page_item_has_children"><a href="http://isha.sadhguru.org/guru-purnima-pc/">Guru Purnima</a></li>
+<li class="page_item page-item-20073"><a href="http://isha.sadhguru.org/guru-purnima/live2015/">Guru Purnima with Sadhguru Live &#8211; July 31, 2015</a></li>
+<li class="page_item page-item-15022"><a href="http://isha.sadhguru.org/quotes-on-joy-of-life/">Yoga for Joy &#8211; From Sadhguru</a></li>
+<li class="page_item page-item-15251"><a href="http://isha.sadhguru.org/health-quotes-and-health-tips/">Yoga for Health &#8211; From Sadhguru</a></li>
+<li class="page_item page-item-16081"><a href="http://isha.sadhguru.org/location-events/">International Day of Yoga &#8211; Free Yoga Workshops Worldwide</a></li>
+<li class="page_item page-item-14135"><a href="http://isha.sadhguru.org/host-workshop/">Host an event</a></li>
+<li class="page_item page-item-20032"><a href="http://isha.sadhguru.org/independence-day/">India&#8217;s 70th Independence Day</a></li>
+<li class="page_item page-item-20162"><a href="http://isha.sadhguru.org/inner-engineering-leadership-program/">Inner Engineering Leadership Program</a></li>
+<li class="page_item page-item-12104"><a href="http://isha.sadhguru.org/innerengineering-thankyou/">Inner Engineering Thank You</a></li>
+<li class="page_item page-item-15303"><a href="http://isha.sadhguru.org/inner-exploration/">Yoga for Inner Exploration &#8211; From Sadhguru</a></li>
+<li class="page_item page-item-15761"><a href="http://isha.sadhguru.org/international-yoga-day/">International Yoga Day &#8211; 21st June, 2017 &#8211; Sadhguru</a></li>
+<li class="page_item page-item-15362"><a href="http://isha.sadhguru.org/isha-blog/">Isha Blog</a></li>
+<li class="page_item page-item-16973 page_item_has_children"><a href="http://isha.sadhguru.org/isha-global-centers/">Isha Global Centers</a></li>
+<li class="page_item page-item-20033 page_item_has_children"><a href="http://isha.sadhguru.org/gramotsavam/">Isha Gramotsavam 2017 &#8211; Celebrate Indian Games in Rural Spirit</a></li>
+<li class="page_item page-item-22009"><a href="http://isha.sadhguru.org/isha-hatha-yoga-8-day-program/">Isha Hatha Yoga 8 Day Program</a></li>
+<li class="page_item page-item-14997"><a href="http://isha.sadhguru.org/isha-links/">Isha Links</a></li>
+<li class="page_item page-item-20349"><a href="http://isha.sadhguru.org/sitemap/">ISHA Sadhguru Sitemap of All Yoga Programs &#038; Yoga Centers</a></li>
+<li class="page_item page-item-16936"><a href="http://isha.sadhguru.org/isha-store/">Isha Store</a></li>
+<li class="page_item page-item-14731 page_item_has_children"><a href="http://isha.sadhguru.org/isha-yoga-programs/">Isha Yoga Program</a></li>
+<li class="page_item page-item-14945"><a href="http://isha.sadhguru.org/iyd/">IYD</a></li>
+<li class="page_item page-item-22302"><a href="http://isha.sadhguru.org/JOY+24%C3%977/">JOY 24×7</a></li>
+<li class="page_item page-item-21883"><a href="http://isha.sadhguru.org/kayantha-sthanam-isha-cremation-services/">Kayantha Sthanam – Isha’s Cremation Services</a></li>
+<li class="page_item page-item-18898"><a href="http://isha.sadhguru.org/kiran-bedi/">Kiran Bedi</a></li>
+<li class="page_item page-item-11235"><a href="http://isha.sadhguru.org/leela/">Leela</a></li>
+<li class="page_item page-item-11926"><a href="http://isha.sadhguru.org/love-and-life/">Life and Love</a></li>
+<li class="page_item page-item-14445"><a href="http://isha.sadhguru.org/location/">location</a></li>
+<li class="page_item page-item-15215"><a href="http://isha.sadhguru.org/love-quotes/">Yoga for Love &#8211; From Sadhguru</a></li>
+<li class="page_item page-item-3350 page_item_has_children"><a href="http://isha.sadhguru.org/mission/">Mission</a></li>
+<li class="page_item page-item-14762"><a href="http://isha.sadhguru.org/namaskar/">Namaskar &#8211; Yoga for All</a></li>
+<li class="page_item page-item-18044"><a href="http://isha.sadhguru.org/namaskar-yoga-for-all/">Namaskar &#8211; Yoga for All</a></li>
+<li class="page_item page-item-17986"><a href="http://isha.sadhguru.org/namaskar-backup/">namaskar backup</a></li>
+<li class="page_item page-item-15026"><a href="http://isha.sadhguru.org/news/">News</a></li>
+<li class="page_item page-item-22208 page_item_has_children"><a href="http://isha.sadhguru.org/publications/">Online Publication</a></li>
+<li class="page_item page-item-15233"><a href="http://isha.sadhguru.org/peace-quotes-and-tips/">Yoga for Peace &#8211; From Sadhguru</a></li>
+<li class="page_item page-item-22308"><a href="http://isha.sadhguru.org/preregistration-confirmed/">Preregistration Confirmed</a></li>
+<li class="page_item page-item-23905"><a href="http://isha.sadhguru.org/press-media-isha/">Press &#038; Media</a></li>
+<li class="page_item page-item-15078"><a href="http://isha.sadhguru.org/press-media/">Press &#038; Media</a></li>
+<li class="page_item page-item-14435"><a href="http://isha.sadhguru.org/registration-cancelled/">Registration Cancelled</a></li>
+<li class="page_item page-item-15147"><a href="http://isha.sadhguru.org/mobile-apps/">Sadhguru &#038; Isha Mobile Apps</a></li>
+<li class="page_item page-item-20129"><a href="http://isha.sadhguru.org/sadhguru-in-paris-fr/">Sadhguru à Paris</a></li>
+<li class="page_item page-item-20127"><a href="http://isha.sadhguru.org/sadhguru-in-paris/">Sadhguru in Paris</a></li>
+<li class="page_item page-item-20905"><a href="http://isha.sadhguru.org/sadhguru-in-singapore">Sadhguru In Singapore</a></li>
+<li class="page_item page-item-734"><a href="http://isha.sadhguru.org/homepage/">Sadhguru Jaggi Vasudev &#8211; The Founder of Isha Foundation</a></li>
+<li class="page_item page-item-15025"><a href="http://isha.sadhguru.org/schedule/">Schedule</a></li>
+<li class="page_item page-item-52496"><a href="http://isha.sadhguru.org/schedule-mobile/">Schedule Mobile</a></li>
+<li class="page_item page-item-15186"><a href="http://isha.sadhguru.org/sgindex/">SG index</a></li>
+<li class="page_item page-item-15195"><a href="http://isha.sadhguru.org/sgindex-2/">SG index</a></li>
+<li class="page_item page-item-18867"><a href="http://isha.sadhguru.org/sg-index/">SG- Index</a></li>
+<li class="page_item page-item-18843"><a href="http://isha.sadhguru.org/sg-spot/">SG- Spot</a></li>
+<li class="page_item page-item-14744 page_item_has_children"><a href="http://isha.sadhguru.org/social-outreach/">Social Outreach</a></li>
+<li class="page_item page-item-16510"><a href="http://isha.sadhguru.org/social/">Social Stream</a></li>
+<li class="page_item page-item-14742 page_item_has_children"><a href="http://isha.sadhguru.org/offerings-celebrations/">Special Offering</a></li>
+<li class="page_item page-item-12817"><a href="http://isha.sadhguru.org/spotonbackup/">Spot On with Sadhguru &#8211; Backup Page</a></li>
+<li class="page_item page-item-12128"><a href="http://isha.sadhguru.org/connect/">Stay Informed</a></li>
+<li class="page_item page-item-15187"><a href="http://isha.sadhguru.org/stay-informed/">Stay Informed</a></li>
+<li class="page_item page-item-15149"><a href="http://isha.sadhguru.org/subscribe/">Subscribe</a></li>
+<li class="page_item page-item-15170"><a href="http://isha.sadhguru.org/success-quotes-and-how-to-become-successful-in-life/">Yoga for Success &#8211; From Sadhguru</a></li>
+<li class="page_item page-item-16562"><a href="http://isha.sadhguru.org/teach-workshop/">Conduct Free Yoga Workshops &#8211; Teach the Practice</a></li>
+<li class="page_item page-item-15398"><a href="http://isha.sadhguru.org/teach-workshop-3/">Teach Workshop</a></li>
+<li class="page_item page-item-10738"><a href="http://isha.sadhguru.org/template-2/">Template &#8211; 2</a></li>
+<li class="page_item page-item-10820"><a href="http://isha.sadhguru.org/template-3/">Template &#8211; 3</a></li>
+<li class="page_item page-item-10491"><a href="http://isha.sadhguru.org/10491-2/">test</a></li>
+<li class="page_item page-item-11286"><a href="http://isha.sadhguru.org/leela-thank-you/">Thank you</a></li>
+<li class="page_item page-item-14434"><a href="http://isha.sadhguru.org/thank-you/">Thank You</a></li>
+<li class="page_item page-item-20072"><a href="http://isha.sadhguru.org/guru-purnima/thankyou/">Thankyou</a></li>
+<li class="page_item page-item-20079"><a href="http://isha.sadhguru.org/guru-purnima/thankyou-pc/">Thankyou</a></li>
+<li class="page_item page-item-8075"><a href="http://isha.sadhguru.org/through-the-mystic-eye/">Through the Mystic Eye &#8211; A Series Featuring Sadhguru</a></li>
+<li class="page_item page-item-14436"><a href="http://isha.sadhguru.org/transactions/">Transactions</a></li>
+<li class="page_item page-item-16472"><a href="http://isha.sadhguru.org/video-channel/">Video channel</a></li>
+<li class="page_item page-item-15081"><a href="http://isha.sadhguru.org/volunteer/">Volunteering opportunities</a></li>
+<li class="page_item page-item-10420"><a href="http://isha.sadhguru.org/wisdom/">Wisdom Center</a></li>
+<li class="page_item page-item-16047"><a href="http://isha.sadhguru.org/wisdom-center-3/">wisdom center</a></li>
+<li class="page_item page-item-10416"><a href="http://isha.sadhguru.org/wisdom-center/">Wisdom Center &#8211; Search Results</a></li>
+<li class="page_item page-item-16338 page_item_has_children"><a href="http://isha.sadhguru.org/yoga-classes/">Yoga classes</a></li>
+<li class="page_item page-item-15579"><a href="http://isha.sadhguru.org/yoga-workshop-search/">Yoga Workshop Search</a></li>
+<li class="page_item page-item-16493"><a href="http://isha.sadhguru.org/youtube-channel/">youtube channel</a></li>
+<li class="page_item page-item-5107"><a href="http://isha.sadhguru.org/contact/">Contact Us</a></li>
+<li class="page_item page-item-2324"><a href="http://isha.sadhguru.org/home/">Man, Mystic, Mission &#8211; Sadhguru&#8217;s Official Website</a></li>
+<li class="page_item page-item-2463"><a href="http://isha.sadhguru.org/media/">In the Media</a></li>
+<li class="page_item page-item-2342 page_item_has_children"><a href="http://isha.sadhguru.org/man/">A man of many facets; expect the unexpected!</a></li>
+<li class="page_item page-item-5534"><a href="http://isha.sadhguru.org/music/">Music from Sounds of Isha</a></li>
+<li class="page_item page-item-2800 page_item_has_children"><a href="http://isha.sadhguru.org/mystic/">Mystic</a></li>
+<li class="page_item page-item-7217"><a href="http://isha.sadhguru.org/membership-checkout/">Spot On &#8211; Checkout</a></li>
+<li class="page_item page-item-2461 page_item_has_children"><a href="http://isha.sadhguru.org/quotes/">Mystic Quotes &#8211; Sadhguru</a></li>
+<li class="page_item page-item-8491"><a href="http://isha.sadhguru.org/galleryoct2013/">Spot On Gallery &#8211; October 2013</a></li>
+<li class="page_item page-item-4161"><a href="http://isha.sadhguru.org/schedule-old/">Sadhguru&#8217;s Schedule of Yoga Programs &#038; Events at Isha Yoga Centers</a></li>
+<li class="page_item page-item-10691"><a href="http://isha.sadhguru.org/template-1/">Template &#8211; 1</a></li>
+<li class="page_item page-item-2464"><a href="http://isha.sadhguru.org/quote-signup/">Quotes Signup</a></li>
+<li class="page_item page-item-7799"><a href="http://isha.sadhguru.org/terms-of-service/">Terms of Service</a></li>
+<li class="page_item page-item-3145"><a href="http://isha.sadhguru.org/videos/">Sadhguru Jaggi Vasudev&#8217;s Videos</a></li>
+<li class="page_item page-item-5927"><a href="http://isha.sadhguru.org/theerthakunds-sacred-water-bodies-2/">Theerthakunds – Sacred Water Bodies</a></li>
+</ul><span class='seperator extralight-border'></span></section><section class='widget widget_categories'><h3 class='widgettitle'>Categories</h3><ul>	<li class="cat-item cat-item-35"><a href="http://isha.sadhguru.org/category/a/" >A</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://isha.sadhguru.org/category/atoz/" >AtoZ</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="http://isha.sadhguru.org/category/b/" >B</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://isha.sadhguru.org/category/c/" >C</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://isha.sadhguru.org/category/d/" >D</a>
+</li>
+	<li class="cat-item cat-item-40"><a href="http://isha.sadhguru.org/category/e/" >E</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="http://isha.sadhguru.org/category/f/" >F</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="http://isha.sadhguru.org/category/g/" >G</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="http://isha.sadhguru.org/category/h/" >H</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="http://isha.sadhguru.org/category/i/" >I</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="http://isha.sadhguru.org/category/j/" >J</a>
+</li>
+	<li class="cat-item cat-item-46"><a href="http://isha.sadhguru.org/category/k/" >K</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="http://isha.sadhguru.org/category/l/" >L</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="http://isha.sadhguru.org/category/m/" >M</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="http://isha.sadhguru.org/category/n/" >N</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="http://isha.sadhguru.org/category/o/" >O</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://isha.sadhguru.org/category/p/" >P</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="http://isha.sadhguru.org/category/q/" >Q</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://isha.sadhguru.org/category/r/" >R</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://isha.sadhguru.org/category/s/" >S</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="http://isha.sadhguru.org/category/t/" >T</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="http://isha.sadhguru.org/category/u/" >U</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="http://isha.sadhguru.org/category/v/" >V</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="http://isha.sadhguru.org/category/w/" >W</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="http://isha.sadhguru.org/category/y/" >Y</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="http://isha.sadhguru.org/category/z/" >Z</a>
+</li>
+</ul><span class='seperator extralight-border'></span></section><section class='widget widget_archive'><h3 class='widgettitle'>Archive</h3><ul>	<li><a href='http://isha.sadhguru.org/2015/01/'>January 2015</a></li>
+	<li><a href='http://isha.sadhguru.org/2014/12/'>December 2014</a></li>
+	<li><a href='http://isha.sadhguru.org/2014/08/'>August 2014</a></li>
+	<li><a href='http://isha.sadhguru.org/2014/07/'>July 2014</a></li>
+	<li><a href='http://isha.sadhguru.org/2014/06/'>June 2014</a></li>
+	<li><a href='http://isha.sadhguru.org/2014/01/'>January 2014</a></li>
+	<li><a href='http://isha.sadhguru.org/2013/08/'>August 2013</a></li>
+	<li><a href='http://isha.sadhguru.org/2013/07/'>July 2013</a></li>
+</ul><span class='seperator extralight-border'></span></section></div></aside>
+	</div><!--end container-->
+
+</div><!-- close default .container_wrap element -->
+
+<div id="footshare" style="width: 100%; background-color: #1c1c1c !important; display: inline-block; color: white; height: 110px;"><aside class="mashsb-container mashsb-main "><div class="mashsb_above_buttons"><div style="font-size: 16px; padding-top: 13px; padding-bottom: 20px; font-family: merriweather; font-style: italic;"></div></div><div class="mashsb-box"><div class="mashsb-count mash-small" style="float:left;"><div class="counts mashsbcount">83.5k</div><span class="mashsb-sharetext">Shares</span></div><div class="mashsb-buttons"><a  class="mashicon-facebook mash-small mashsb-noshadow" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fisha.sadhguru.org%2F" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Facebook</span></a><a  class="mashicon-twitter mash-small mashsb-noshadow" href="https://twitter.com/intent/tweet?text=Sadhguru%20Jaggi%20Vasudev%20%E2%80%93%20The%20Founder%20of%20Isha%20Foundation&url=http://isha.sadhguru.org/&via=ishafoundation" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Twitter</span></a><a style="display:none;" class="mashicon-whatsapp mash-small mashsb-noshadow" href="whatsapp://send?text=Sadhguru%20Jaggi%20Vasudev%20%E2%80%93%20The%20Founder%20of%20Isha%20Foundation%20http%3A%2F%2Fisha.sadhguru.org%2F" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Whatsapp</span></a><a  class="mashicon-pinterest mash-small mashsb-noshadow" href="#" data-mashsb-url="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fisha.sadhguru.org%2F&amp;media=&amp;description=" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Pinterest</span></a><a  class="mashicon-mail mash-small mashsb-noshadow" href="mailto:?subject=From_Isha_Sadhguru_Org&amp;body=%20http%3A%2F%2Fisha.sadhguru.org%2F" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Mail</span></a><div class="onoffswitch2 mash-small mashsb-noshadow" style="display:none;"></div></div></div>
+                    <div style="clear:both;"></div><div class="mashsb-toggle-container"></div></aside>
+            <!-- Share buttons made by mashshare.net - Version: 3.4.1--></div>		<div class='container_wrap footer_color' id='footer'>
+
+			<div class='container'>
+
+				<div class='flex_column av_one_fifth  first el_before_av_one_fifth'><section id="text-2" class="widget clearfix widget_text">			<div class="textwidget"><br>  
+<a href="http://isha.sadhguru.org/"><img  src="http://isha.sadhguru.org/wp-content/uploads/2015/05/isha-logo.png" target="_blank&quot;" alt="sadhguru"></a>
+<div id ="isha-share">
+<a href="http://twitter.com/ishafoundation" target="_blank&quot;" rel="nofollow"><img src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-t-share.png" /></a>
+<a href="https://www.facebook.com/ishafoundation" rel="nofollow"><img src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-f-share.png" /></a> 
+<a href="http://www.youtube.com/user/ishafoundation"target="_blank&quot;"><img src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-y-share.png" /></a> 
+<a href="https://www.linkedin.com/company/isha-foundation"target="_blank&quot;" rel="nofollow"><img src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-l-share.png" /></a> 
+</div></div>
+		<span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-2" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">ISHA</h3><div class="menu-footer-column-1-isha-container"><ul id="menu-footer-column-1-isha" class="menu"><li id="menu-item-55297" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55297"><a class="no-scroll"href="http://isha.sadhguru.org/yoga/">Isha Yoga</a></li>
+<li id="menu-item-15365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15365"><a class="no-scroll"href="http://isha.sadhguru.org/isha-yoga-programs/">Isha Yoga Programs</a></li>
+<li id="menu-item-15366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15366"><a class="no-scroll"href="http://isha.sadhguru.org/isha-global-centers/centers/">Global Centers</a></li>
+<li id="menu-item-16041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16041"><a class="no-scroll"href="http://isha.sadhguru.org/social-outreach/">Social Outreach</a></li>
+<li id="menu-item-16042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16042"><a class="no-scroll"href="http://isha.sadhguru.org/offerings-celebrations/">Offerings &#038; Celebrations</a></li>
+<li id="menu-item-17132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17132"><a class="no-scroll"href="http://isha.sadhguru.org/offerings-celebrations/health/">Health Offerings</a></li>
+<li id="menu-item-20657" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20657"><a class="no-scroll"href="http://isha.sadhguru.org/blog/">Isha Blog</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-3" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">CONNECT</h3><div class="menu-footer-column-2-connect-container"><ul id="menu-footer-column-2-connect" class="menu"><li id="menu-item-16050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16050"><a class="no-scroll"href="http://isha.sadhguru.org/subscribe/">Subscribe</a></li>
+<li id="menu-item-17452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17452"><a class="no-scroll"href="http://isha.sadhguru.org/volunteer/">Volunteering opportunities</a></li>
+<li id="menu-item-16053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16053"><a class="no-scroll"href="http://isha.sadhguru.org/donate/">Donate</a></li>
+<li id="menu-item-16384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16384"><a class="no-scroll"href="http://isha.sadhguru.org/mobile-apps/">Sadhguru &#038; Isha Mobile Apps</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-4" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">INFORMATION</h3><div class="menu-footer-column-3-information-container"><ul id="menu-footer-column-3-information" class="menu"><li id="menu-item-16398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16398"><a class="no-scroll"href="http://isha.sadhguru.org/schedule/">Sadhguru&#8217;s Schedule</a></li>
+<li id="menu-item-16215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16215"><a class="no-scroll"href="http://isha.sadhguru.org/press-media/">Press &#038; Media</a></li>
+<li id="menu-item-17209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17209"><a class="no-scroll"href="http://isha.sadhguru.org/contact-us/">Contact Us</a></li>
+<li id="menu-item-21100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21100"><a class="no-scroll"target="_blank" href="http://careers.isha.sadhguru.org/">Careers</a></li>
+<li id="menu-item-16060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16060"><a class="no-scroll"href="http://isha.sadhguru.org/isha-links/">Isha Links</a></li>
+<li id="menu-item-20354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20354"><a class="no-scroll"href="http://isha.sadhguru.org/sitemap/">Sitemap</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-5" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">SADHGURU</h3><div class="menu-footer-column-4-sadhguru-container"><ul id="menu-footer-column-4-sadhguru" class="menu"><li id="menu-item-16364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16364"><a class="no-scroll"href="http://isha.sadhguru.org/man/">Man</a></li>
+<li id="menu-item-16206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16206"><a class="no-scroll"href="http://isha.sadhguru.org/mystic/">Mystic</a></li>
+<li id="menu-item-15404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15404"><a class="no-scroll"href="http://isha.sadhguru.org/mission/">Mission</a></li>
+<li id="menu-item-17134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17134"><a class="no-scroll"href="http://isha.sadhguru.org/quotes/">Subscribe to Mystic Quotes</a></li>
+<li id="menu-item-16064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16064"><a class="no-scroll"href="http://isha.sadhguru.org/videos/">Videos</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class="flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth "> <a href="http://isha.sadhguru.org/"><img src="http://isha.sadhguru.org/wp-content/themes/enfold-child/images/layout/sadhguru_logo.png" /></a><ul class="social-share"><span itemscope itemtype="http://schema.org/Organization"><link itemprop="url" href="http://isha.sadhguru.org/"><li><a itemprop="sameAs" href="https://twitter.com/sadhguruJV" target="_blank" rel="nofollow"><img src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-t-share.png" /></a></li><li><a itemprop="sameAs" href="https://www.facebook.com/sadhguru" target="_blank" rel="nofollow"><img src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-f-share.png" /></a></li><li><a itemprop="sameAs" href="https://www.youtube.com/user/sadhguru" target="_blank" rel="nofollow"><img  src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-y-share.png" /></a></li><li><a itemprop="sameAs" href="http://in.linkedin.com/in/sadhguruJV" target="_blank" rel="nofollow"><img  src="http://isha.sadhguru.org/wp-content/uploads/2015/05/footer-l-share.png" /></a></li></span></ul></div>
+
+				</div>
+
+
+					<!-- ####### END FOOTER CONTAINER ####### -->
+					</div>
+
+		
+
+
+
+
+			
+				<footer class='container_wrap socket_color' id='socket'  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+					<div class='container'>
+
+						<span class='copyright'>© 2017 Sadhguru All rights reserved</span>
+
+						
+					</div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+
+		<!-- end wrap_all --></div>
+
+<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+</script>
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = 'http://isha.sadhguru.org/wp-content/themes/enfold/framework/';
+    avia_framework_globals.installedAt = 'http://isha.sadhguru.org/wp-content/themes/enfold/';
+    avia_framework_globals.ajaxurl = 'http://isha.sadhguru.org/wp-admin/admin-ajax.php';
+/* ]]> */ 
+</script>
+ 
+ <script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.6'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/jquery-validation-for-contact-form-7/js/jquery.validate.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/plugins/jquery-validation-for-contact-form-7/js/jquery.jvcf7_validation.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold/js/avia.js?ver=3'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold/js/shortcodes.js?ver=3'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/comment-reply.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold-child/js/jquery.sidr.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold-child/js/slick.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajaxurl":"http:\/\/isha.sadhguru.org\/wp-admin\/admin-ajax.php","resturl":"http:\/\/isha.sadhguru.org\/wp-json\/upcoming-programs\/v1\/","ajax_nonce":"7bcd2b6640"};
+var rt_ip_country = {"country":"IN","city":""};
+var rtajaxurl = "http:\/\/isha.sadhguru.org\/wp-content\/themes\/enfold-child\/includes\/rt-php-ajax.php";
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold-child/js/rt-custom-script.js?ver=4.7.2.1'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold-child/js/parallax.js'></script>
+<script type='text/javascript' src='http://isha.sadhguru.org/wp-content/themes/enfold-child/js/tendina.min.js'></script>
+
+<a href='#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<script>
+(function(jQuery) {
+				jQuery(document).ready(function() {
+					jQuery.slidebars();
+				});
+			}) (jQuery);
+
+
+
+</script>
+<script>
+/*
+( function( jQuery ) {
+jQuery( document ).ready(function() {
+jQuery('#cssmenu > ul > li > a').click(function() {
+	jQuery('#cssmenu li').removeClass('active');
+	jQuery(this).closest('li').addClass('active');
+	var checkElement = jQuery(this).next();
+	if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+	jQuery(this).closest('li').removeClass('active');
+	checkElement.slideUp('normal');
+	}
+	if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+	jQuery('#cssmenu ul ul:visible').slideUp('normal');
+	checkElement.slideDown('normal');
+	}
+	if(jQuery(this).closest('li').find('ul').children().length == 0) {
+	return true;
+	} else {
+	return false;
+	}
+});
+});
+} )( jQuery );
+*/
+</script>
+<script>
+
+jQuery(document).ready(function() {
+	jQuery('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+</script>
+
+<script>
+
+//right-menu
+
+jQuery(document).ready(function(){
+	jQuery('#hideshow').live('click', function(event) {
+		 jQuery('#right-menu').toggle('show');
+	});
+});
+</script>
+
+
+
+
+
+
+<script>
+function preloadimages(arr){
+	var newimages=[], loadedimages=0
+	var postaction=function(){}
+	var arr=(typeof arr!="object")? [arr] : arr
+	function imageloadpost(){
+		loadedimages++
+		if (loadedimages==arr.length){
+			postaction(newimages) //call postaction and pass in newimages array as parameter
+		}
+	}
+	for (var i=0; i<arr.length; i++){
+		newimages[i]=new Image()
+		newimages[i].src=arr[i]
+		newimages[i].onload=function(){
+			imageloadpost()
+		}
+		newimages[i].onerror=function(){
+			imageloadpost()
+		}
+	}
+	return { //return blank object with done() method
+		done:function(f){
+			postaction=f || postaction //remember user defined callback functions to be called when images load
+		}
+	}
+}
+
+
+preloadimages(['http://s.isha.ws/wp-content/uploads/grey_gallery/inner-engineering.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/idy-2016.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/social-offerings.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/isha-yoga-centers-normal.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/health.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/isha-global-centers-hover.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/social-outreach.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/IS0_Homepage_MSR2016.jpg', 'http://s.isha.ws/wp-content/uploads/grey_gallery/IS0_Homepage_MSR2016_hover.jpg']).done(function(images){
+		//console.log("loaded");
+	});
+
+
+</script>
+
+<script>
+/*
+jQuery(function() {
+	jQuery('#cssmenu ul').removeClass('sub-menu');
+});
+*/
+</script>
+
+
+<!--
+<script>
+	jQuery(document).ready(function() {
+
+			jQuery(window).scroll(function() {
+				if (jQuery(window).scrollTop() > 450) {
+					jQuery("#right-menu").css("display","block");
+				}else {
+					jQuery("#right-menu").css("display","none");
+				}
+			});
+		});
+</script>
+-->
+	
+<script>jQuery(window).trigger('resize').trigger('scroll');</script>
+<script type="text/javascript">
+jQuery( document ).ready(function() {
+jQuery('.dropdown').tendina({
+	// enable slide down/up animations
+	animate: true,
+
+	// animation speed
+	speed: 500,
+
+	// open menus on mouse hover
+	onHover: false,
+
+	// the delay after which Tendina will open menus on hover.
+	hoverDelay: 200,
+
+	// The active menu that will be open when a new Tendina menu is created.
+	// activeMenu: '.my-active-category'
+	// or activeMenu: $('.my-active-category')
+	activeMenu: null,
+
+	// Callback that will be executed once any menu/submenu has been opened.
+	openCallback: function($clickedEl) {
+	  //console.log($clickedEl);
+	},
+
+	// Callback that will be executed once any menu/submenu has been closed.
+	closeCallback: function($clickedEl) {
+	  //console.log($clickedEl);
+	}
+	});
+
+
+	  _hasChildren = function(el) {
+		return jQuery(el).next('ul').length > 0;
+	  };
+
+	  _IsChildrenHidden = function(el) {
+		return jQuery(el).next('ul').is(':hidden');
+	  };
+
+	  $activeMenu = jQuery('#isha_yoga_programs')
+	  $activeParents = $activeMenu.closest('ul').parents('li').find('> a');
+	  if (_hasChildren($activeParents) && _IsChildrenHidden($activeParents)) {
+		$activeParents.next('ul').show();
+	  } else {
+		$activeMenu.next('ul').show();
+	  }
+	  $activeMenu.parent().addClass('selected');
+
+	  menu = jQuery('#isha_yoga_programs').parent().children('ul').children('li')
+	  menu.addClass('selected');
+	  menu.find('ul').show();
+
+	});
+</script>
+<!--
+</script>
+//-->
+
+<div id="fb-root"></div>
+
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 988030138;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<div style="display: none">
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+</div>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/988030138/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script type="text/javascript" charset="utf-8">
+    var _uf = _uf || {};
+    _uf.domain = "isha.sadhguru.org";
+    _uf.utm_source_field = "utm_source"; // Default 'USOURCE'
+    _uf.utm_medium_field = "utm_medium"; // Default 'UMEDIUM'
+    _uf.utm_campaign_field = "utm_campaign"; // Default 'UCAMPAIGN'
+    _uf.utm_content_field = "utm_content"; // Default 'UCONTENT'
+    _uf.utm_term_field = "utm_term"; // Default 'UTERM'
+
+    _uf.initial_referrer_field = "IREFERRER"; // Default 'IREFERRER'
+    _uf.last_referrer_field = "LREFERRER"; // Default 'LREFERRER'
+    _uf.initial_landing_page_field = "ILANDPAGE"; // Default 'ILANDPAGE'
+    _uf.visits_field = "VISITS"; // Default 'VISITS'
+    _uf.additional_params_map = {
+        affiliate: "AFFILIATE"
+    }; // Maps affiliate parameter to AFFILIATE form field
+    _uf.sessionLength = 1; // In hours. Default is 1 hour
+    _uf.add_to_form = "all"; // 'none', 'all', 'first'. Default is 'all'
+    _uf.form_query_selector = 'form'; // custom form selector. Default is 'form', to select any form.
+</script>
+<script src="//d12ue6f2329cfl.cloudfront.net/resources/utm_form-1.0.3.min.js" async></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3aaf05518e","applicationID":"36603064","transactionName":"ZQMEYRdRWkRXUBBcXVxJJ1YRWVtZGUcBWEJeBxJQSFhbWlM=","queueTime":0,"applicationTime":1118,"atts":"SUQHF19LSUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
+
