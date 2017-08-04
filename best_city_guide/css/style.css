@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+body {
+  line-height: 1.5;
+  color: #3a3a3a;
+  margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	background: white;
+	color: lightseagreen;
+}
+
+header {
+	text-align: center;
+	background: lightseagreen;
+	padding: 1em 0;
+
+}
+
+footer {
+	background: #ccc;
+	padding: 1em;
+	text-align: center;
+}
+
+h1 a {
+	color: navy;
+}
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	display: block;
+}
+
+.feature-img {
+	width: 220px;
+	height: 200px;
+	float: left;
+	margin-top: 5px;
+	  margin-right: 15px;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  border: solid 1px #d9e4ea;
+}
+
+@media (min-width:769px) {
+	
+  .wrapper {
+    min-height: calc(100vh - 67px);
+  }
+
+  .container {
+	  width: 70%;
+	  max-width: 1000px;
+	  margin: 0 auto;
+	  position: relative;
+  }
+  
+  .name,
+  .main-nav li{
+	display: inline-block;
+  } 
+  
+  .main-nav {
+	  float: right;
+  }
+  
+  .main-nav li {
+	  float: right;
+  }
+  .name {
+	width: 240px;
+	float: left;
+	
+  }
+  
+  .main-nav li {
+	  margin-left: 12px;
+  }
+  
+  .feature-img {	  
+	  
+  }
+  
+  .clearfix::after {
+	  content: ""; /* clearfix rule uses content property content to create a empty virtual element at the bottom of the container*/
+	  display: table; /* mimics table display value of html in css */
+	  clear: both; /* clears any collapsed space */
+  }
+  
+  
+	
+}
+
+
+
+
