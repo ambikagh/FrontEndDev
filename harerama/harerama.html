@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Harerama: Official website of Sri Sri Raghaveshwara Bharati Maha Swamiji</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #fff0e6;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #4d1f00;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+	.main-nav a {
+		display: block;		
+		text-align: center;
+		padding: 10px 15px;
+	}
+	
+	.main-nav a {
+		font-size: .95em;
+		color: #4d1f00;
+		text-transform: uppercase;
+	}
+	
+	.main-nav a:hover {
+		color: #ff6600;
+	}
+	
+	.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #331400;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.icon-location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	z-index: 2;
+}
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 68px;
+	}
+
+	.main-header {
+		position: fixed;
+		background: #ffd1b3;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+	
+	.container {
+	
+		width: 90%;
+		margin: 0 auto;
+	}
+	.name,
+	.col {
+		float: left;
+	}
+	
+	.primary,
+	.secondary {
+		width: 50%;
+	}
+	
+	.main-nav {
+		float: right;
+	}
+	
+	.main-nav li {
+		display: inline-block;		
+		margin-left: 15px;
+	}
+	
+	.tagline {
+		font-size: 1.4em;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary,
+	.tertiary {
+		width: 30%;
+	}
+
+}
+</style>
+</head>
+<body>
+<header class="main-header">
+	<div class="container clearfix">
+		<h1 class="name"><a  href="#">Hare Raama</a></h1>
+		<ul class="main-nav">
+			<li><a class="home" href="#">HOME</a></li>
+			<li><a class="projects" href="#">PROJECTS</a></li>
+			<li><a class="library" href="#">LIBRARY</a></li>
+			<li><a class="MEET" href="#">CONTACT</a></li>
+		</ul>
+	</div>
+</header>
+<footer class="main-footer">
+	<div class="container">
+		<span>© 2017 Raghaveshwara Bharati All rights reserved</span>
+	</div>
+</footer>
+</body>
+</html>
